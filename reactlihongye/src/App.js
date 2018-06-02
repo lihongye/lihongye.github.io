@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from "./pages/home.js";
 
 const BasicExample = () => (
   <Router>
@@ -25,11 +26,7 @@ const BasicExample = () => (
   </Router>
 );
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-);
+
 
 const About = () => (
   <div>
