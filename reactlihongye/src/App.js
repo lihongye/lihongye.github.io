@@ -1,32 +1,66 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Home from "./pages/home.js";
+import React, { Component } from "react";
+import { BrowserRouter as Switch, Route, NavLink} from "react-router-dom";
+import Home from "./pages/home";
+export default class App extends Component{
 
-const BasicExample = () => (
-  <Router>
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/topics">Topics</Link>
-        </li>
-      </ul>
+  constructor(props){
+    super(props);
+    this.state = {
+      testNumber:'一些数据',
+    }
+  }
 
-      <hr />
+  toggleNav = () => {
+    this.setState({testNumber:"lihongye"});
+  }
 
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/topics" component={Topics} />
-    </div>
-  </Router>
-);
+  FirstChild = props => {
+    const childrenArray = React.Children.toArray(props.children);
+    return childrenArray[0] || null;
+  }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log(nextProps);
+    console.log(nextState);
+    console.log(nextProps + "####" + nextState);
+    
+    return true;
+  }
+  componentWillUnmount(){
+    //console.log(Menu);
+  }
 
+  componentDidMount(){
+    //console.log(Menu);
+  }
+  render(){
+    var MenuArray = [
+        {url:"/",content:"首页"},
+        {url:"/test",content:"工作"},
+        {url:"/about",content:"学习记录"},
+        {url:"/topics",content:"学习资料"},
+        {url:"/test2",content:"生活随笔"},
+        {url:"/test3",content:"个人简历"},
+    ];
+    var tempMenuArray = [];
+    for(var i = 0, len = MenuArray.length; i < len; i++){
+      tempMenuArray.push(<li key={i}><NavLink exact={i===0} to={MenuArray[i].url} className="link">{MenuArray[i].content}</NavLink></li>)
+    }
+
+    return(
+      <Switch>
+        <div>
+          <ul className="menuList">
+            {tempMenuArray}
+          </ul>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/topics" component={Topics} />
+        </div>
+      </Switch>
+    );
+  }
+}
 
 const About = () => (
   <div>
@@ -39,13 +73,13 @@ const Topics = ({ match }) => (
     <h2>Topics</h2>
     <ul>
       <li>
-        <Link to={`${match.url}/rendering`}>Rendering with React</Link>
+        <NavLink to={`${match.url}/rendering`} activeClassName="active">Rendering with React</NavLink>
       </li>
       <li>
-        <Link to={`${match.url}/components`}>Components</Link>
+        <NavLink to={`${match.url}/components`} activeClassName="active">Components</NavLink>
       </li>
       <li>
-        <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
+        <NavLink to={`${match.url}/props-v-state`} activeClassName="active">Props v. State</NavLink>
       </li>
     </ul>
 
@@ -63,5 +97,3 @@ const Topic = ({ match }) => (
     <h3>{match.params.topicId}</h3>
   </div>
 );
-
-export default BasicExample;
