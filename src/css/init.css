@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif,'Microsoft Yahei';
+	font-family: 'Microsoft Yahei',sans-serif;
 }
 /*浮动与清除浮动*/
 .r{float: right;}
@@ -97,7 +97,7 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background: #ffffffb3;
+	background: rgba(255, 255, 255, 0.7);
 	text-align: center;
 	box-shadow: 0px 0px 5px #05920A;
 	z-index:99;
@@ -234,6 +234,9 @@ body {
 .top-in{transform: rotateX(90deg) translateZ(-85px);}
 .bottom-in{transform: rotateX(-90deg) translateZ(-85px);}
 .homeMain {padding: 230px 0 40px 0;}
+
+.menuList + div {margin-top: 60px;}
+.menuList + div.home {margin-top: 0;}
 /*footer*/
 #footer {
 	background-attachment: scroll,fixed;

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Switch, Route, NavLink} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
 import Home from "./pages/home";
+import NotFoundPage from "./pages/404";
 export default class App extends Component{
 
   constructor(props){
@@ -48,16 +49,21 @@ export default class App extends Component{
     }
 
     return(
-      <Switch>
-        <div>
-          <ul className="menuList">
-            {tempMenuArray}
-          </ul>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/topics" component={Topics} />
-        </div>
-      </Switch>
+      <Router>
+          <div>
+              <ul className="menuList">
+                {tempMenuArray}
+              </ul>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/topics" component={Topics} />
+                <Route component={NotFoundPage} />
+
+              </Switch>
+          </div>
+      </Router>
+     
     );
   }
 }
