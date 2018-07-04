@@ -1,95 +1,13 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Microsoft Yahei',sans-serif;
-}
+body{background:url(../img/timg.jpg) center center no-repeat fixed;background-size: cover;}
 /*浮动与清除浮动*/
 .r{float: right;}
 .l{float: left;}
+.error {color: #ec2c36;}
 .clear{clear: both;}
 .clearfloat:after,.clearfloat:before{display:table;content:"";}
 .clearfloat:after{clear: both}
 .clearfloat{*zoom:1}
-/*页面首次加载动画效果*/
-#loading {
-	position:fixed;
-	width:100%;
-	height:100%;
-	background:#fff;
-	top:0;
-	left:0;
-	z-index:99999;
-}
-.loading-content {
-	width: 60px;
-	height: 45px;
-	margin: -22px -30px 0 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-}
-#loading span {
-	display: inline-block;
-	width: 8px;
-	height: 45px;
-	border-radius: 4px;
-	background: lightgreen;
-	-webkit-animation: load 1.04s ease infinite;
-	-ms-animation: load 1.04s ease infinite;
-	-moz-animation: load 1.04s ease infinite;
-	-o-animation: load 1.04s ease infinite;
-	animation: load 1.04s ease infinite;
-}
-@-webkit-keyframes load {
-	0%,100% {
-        height: 45px;
-        background: lightgreen;
-    }
-    50% {
-        height: 65px;
-        margin-top: -20px;
-        background: #05920A;
-    }
-}
-@keyframes load {
-	0%,100% {
-        height: 45px;
-        background: lightgreen;
-    }
-    50% {
-        height: 65px;
-        margin-top: -20px;
-        background: #05920A;
-    }
-}
-#loading span:nth-child(2) {
-	-webkit-animation-delay:0.13s;
-	-ms-animation-delay:0.13s;
-	-moz-animation-delay:0.13s;
-	-o-animation-delay:0.13s;
-	animation-delay:0.13s;
-}
-#loading span:nth-child(3) {
-	-webkit-animation-delay:0.26s;
-	-ms-animation-delay:0.26s;
-	-moz-animation-delay:0.26s;
-	-o-animation-delay:0.26s;
-	animation-delay:0.26s;
-}
-#loading span:nth-child(4) {
-	-webkit-animation-delay:0.39s;
-	-ms-animation-delay:0.39s;
-	-moz-animation-delay:0.39s;
-	-o-animation-delay:0.39s;
-	animation-delay:0.39s;
-}
-#loading span:nth-child(5) {
-	-webkit-animation-delay:0.52s;
-	-ms-animation-delay:0.52s;
-	-moz-animation-delay:0.52s;
-	-o-animation-delay:0.52s;
-	animation-delay:0.52s;
-}
+
 /*页面菜单样式*/
 .menuList {
 	position: fixed;
@@ -133,7 +51,6 @@ body {
 	padding: 10em 0 20em 0;
 	text-align: center;
 }
-.banner{width:100%;}
 .box {
 	position: absolute;
 	top: 50%;
@@ -194,7 +111,6 @@ body {
 .cude:hover .right{transform: rotateY(90deg) translateZ(250px);}
 .cude:hover .top{transform: rotateX(90deg) translateZ(250px);}
 .cude:hover .bottom{transform: rotateX(90deg) translateZ(-250px);}
-
 @-webkit-keyframes rotate {
 	from {
 		transform: rotateX(0deg) rotateY(0deg);
@@ -211,7 +127,6 @@ body {
 		transform: rotateX(360deg) rotateY(360deg);
 	}
 }
-
 .surface-in {
 	width: 170px;
 	height: 170px;
@@ -221,7 +136,6 @@ body {
 	margin-top: -85px;
 	margin-left: -85px;
 }
-
 .surface-in img {
 	width: 170px;
 	height: 170px;
@@ -233,10 +147,49 @@ body {
 .right-in{transform: rotateY(90deg) translateZ(85px);}
 .top-in{transform: rotateX(90deg) translateZ(-85px);}
 .bottom-in{transform: rotateX(-90deg) translateZ(-85px);}
-.homeMain {padding: 230px 0 40px 0;}
-
+.main {width:1100px; text-align: center;margin:auto;background: rgba(255, 255, 255, 0.7);min-height: 445px;}
+@media (max-width: 1100px){
+	.main {width:100%;}
+}
 .menuList + div {margin-top: 60px;}
-.menuList + div.home {margin-top: 0;}
+.menuList + div.home {margin-top: 0;background:#fff;}
+.homeMain .swiper-container {margin-top:15px; height:445px;}
+.homeMain .slideDetial {
+	width:98%;
+	min-height:400px;
+	margin:0px auto;
+	border-radius: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	text-align:left;
+}
+.blockLink {
+	display:block;
+	color:#fff;
+	text-decoration: none;
+}
+.subTitle {
+	font-size:25px;
+	margin:10px 0px;
+}
+.swiper-pagination-bullet {width: 12px;height: 12px;}
+.swiper-pagination-bullet-active {background: #05920A;}
+.homeMain .swiper-pagination .swiper-pagination-bullets {bottom: 0px;} 
+
+/*404页面*/
+.notFound { 
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0 6px 15px 0px #05920A;
+	position: relative;
+}
+.notFound .absolute {
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 20%;
+}
+
 /*footer*/
 #footer {
 	background-attachment: scroll,fixed;

@@ -4,7 +4,11 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import "./css/init.css";
 ReactDOM.render(<App />, document.getElementById('root'), ()=>{
-    document.getElementById("loading").style.display = "none";
+    var tempTimter = setTimeout(()=>{
+        document.getElementById("loading").style.display = "none";
+        clearTimeout(tempTimter);
+    },1000)
+    
 });
 
 registerServiceWorker();

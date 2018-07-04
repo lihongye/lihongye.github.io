@@ -3,51 +3,24 @@ import { BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom
 import Home from "./pages/home";
 import NotFoundPage from "./pages/404";
 export default class App extends Component{
-
   constructor(props){
     super(props);
     this.state = {
-      testNumber:'一些数据',
-    }
-  }
-
-  toggleNav = () => {
-    this.setState({testNumber:"lihongye"});
-  }
-
-  FirstChild = props => {
-    const childrenArray = React.Children.toArray(props.children);
-    return childrenArray[0] || null;
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log(nextProps);
-    console.log(nextState);
-    console.log(nextProps + "####" + nextState);
-    
-    return true;
-  }
-  componentWillUnmount(){
-    //console.log(Menu);
-  }
-
-  componentDidMount(){
-    //console.log(Menu);
-  }
-  render(){
-    var MenuArray = [
+      MenuArray:[
         {url:"/",content:"首页"},
         {url:"/test",content:"工作"},
         {url:"/about",content:"学习记录"},
         {url:"/topics",content:"学习资料"},
         {url:"/test2",content:"生活随笔"},
         {url:"/test3",content:"个人简历"},
-    ];
-    var tempMenuArray = [];
-    for(var i = 0, len = MenuArray.length; i < len; i++){
-      tempMenuArray.push(<li key={i}><NavLink exact={i===0} to={MenuArray[i].url} className="link">{MenuArray[i].content}</NavLink></li>)
+      ]
     }
-
+  }
+  render(){
+    var _this = this.state,  tempMenuArray = [];
+    for(var i = 0, len = _this.MenuArray.length; i < len; i++){
+      tempMenuArray.push(<li key={i}><NavLink exact={i===0} to={_this.MenuArray[i].url} className="link">{_this.MenuArray[i].content}</NavLink></li>)
+    }
     return(
       <Router>
           <div>
