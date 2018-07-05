@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
 import Home from "./pages/home";
+import Works from "./pages/works";
 import NotFoundPage from "./pages/404";
 export default class App extends Component{
   constructor(props){
@@ -8,7 +9,7 @@ export default class App extends Component{
     this.state = {
       MenuArray:[
         {url:"/",content:"首页"},
-        {url:"/test",content:"工作"},
+        {url:"/works",content:"工作"},
         {url:"/about",content:"学习记录"},
         {url:"/topics",content:"学习资料"},
         {url:"/test2",content:"生活随笔"},
@@ -28,11 +29,15 @@ export default class App extends Component{
                 {tempMenuArray}
               </ul>
               <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={props => {
+                    let obj = Object.assign({}, {cudeBox: this.state.MenuArray}, props)
+                    return <Home {...obj}/>
+                }}/>
+                <Route exact path="/works" component={Works}/>
+                <Route path="/works"  component={Works} />
                 <Route path="/about" component={About} />
                 <Route path="/topics" component={Topics} />
                 <Route component={NotFoundPage} />
-
               </Switch>
           </div>
       </Router>
