@@ -183,7 +183,94 @@ body{background:url(../img/timg.jpg) center center no-repeat fixed;background-si
 .swiper-pagination-bullet {width: 12px;height: 12px;}
 .swiper-pagination-bullet-active {background: #05920A;}
 .homeMain .swiper-pagination .swiper-pagination-bullets {bottom: 0px;} 
-
+/*works页面*/
+.works {position: relative;}
+.works h2, .works p, .works h3 {margin:0;padding:0;}
+.siderList {
+	position:fixed;
+	height:100%;
+	text-align:right;
+	padding:15px;
+	margin:0;
+	width: 162px;
+    box-sizing: border-box;
+}
+.siderList li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+.secondLink{
+	display: block;
+	font-size:15px;
+	color: #333;
+	text-decoration: none;
+	position: relative;
+}
+.secondLink span {display:block;}
+.secondLink .title {font-weight: bold;}
+.secondLink .font {font-size:12px;}
+.secondLink .ico {
+	position: absolute;
+	width: 12px;
+    height: 12px;
+    border: 1px solid #05920A;
+    top: 20px;
+    right: -23px;
+    border-radius: 50%;
+    background: #fff;
+}
+.secondLink.active .ico {background: #05920A;}
+.secondLink.active {color:#05920A;}
+.mainContent {
+	width: calc(100% - 162px);
+	margin-left: 162px;
+    padding: 15px;
+	box-sizing: border-box;
+	text-align: left;
+	color: #191818;
+	border-left: 1px solid #05920A;
+	min-height:445px;
+}
+.contentBox {
+	margin-bottom: 20px;
+    border-bottom: 1px solid #05920A;
+}
+.contentBox:last-child {border-bottom: none;}
+.contentBox h2 {
+	font-size:16px;
+	margin-bottom:10px;
+}
+.contentBox h3 {
+	font-size:14px;
+	margin-bottom:10px;	
+}
+.mainContent p {
+	font-size:14px;
+	margin-bottom:10px;
+	line-height: 22px;
+}
+.contentBox .link {
+	color:#05920A;
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+}
+.activeList {margin-top: 15px;}
+.account span{display: block;}
+.reactTable {
+	font-size: 14px;
+    border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+.reactTable td {
+	padding:5px;
+	border: 1px solid #928f8f;
+}
+.reactTable tr:hover{
+	background: rgba(221, 221, 221, 0.6);
+}
+thead td {font-weight: bold;}
 /*404页面*/
 .notFound { 
 	border-radius: 0 0 20px 20px;
