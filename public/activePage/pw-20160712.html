@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
     <title>李宏叶个人博客</title>
 </head>
-<body>
+<body style="min-width: 1050px;">
 <div class="hd-20160601">
 <div class="hd-banner-bg">
     <div class="hd-banenr">
@@ -97,7 +97,7 @@
         .hd-product-list ul li{width: 192px;height: 250px;background: #fff;float: left;margin:5px;position: relative;}
         .hd-product-list ul li:hover {border-color:#aaafb3;box-shadow: 0px 0px 16px #585858;-webkit-box-shadow: 0px 0px 16px #585858;-o-box-shadow: 0px 0px 16px #585858;-ms-box-shadow: 0px 0px 16px #585858;-moz-box-shadow: 0px 0px 16px #585858; }
         .hd-product-list ul li:hover .review-wrapper p a {color:#ed6d1f;}
-        .hd-product-list ul li img {width:185px;height:162px;}
+        .hd-product-list ul li img {width:185px;height:162px;padding-top:5px;}
         .hd-product-list .price-area {padding-left: 5px;}
         .hd-product-list .old-price {font-size: 14px;text-decoration: line-through;display: block;line-height: 15px;color: #999;position: absolute; bottom: 28px;}
         .hd-product-list .current-price { font-size: 20px; font-weight: bold; color: #ed6d1f; display: block; line-height: 22px; position: absolute; bottom: 5px;}
@@ -162,7 +162,7 @@
             $(".lists-30").append(str2_30);
             function chagneBg(val,flag){
                 if(val > 3092){
-                    flag == "scroll" ? $(".hd-main-content").css({"background-attachment":"fixed","background-position-y":" -1905px"}) :'';
+                    flag == "scroll" ? $(".hd-main-content").css({"background-attachment":"fixed","background-position-y":" -1915px"}) :'';
                 }else{
                     flag == "fixed" ? $(".hd-main-content").css({"background-attachment":"scroll","background-position-y":" 0px"}) :'';
                 }
