@@ -55,7 +55,7 @@ body{background:url(../img/timg.jpg) center center no-repeat fixed;background-si
 	position: absolute;
 	top: 50%;
 	left: 50%; 
-    margin:-325px 0 0 -150px;
+    margin:-150px 0 0 -150px;
 	-webkit-transform:scale(0);
 	transform:scale(0);
 	-webkit-transition:transform .6s;
@@ -69,7 +69,6 @@ body{background:url(../img/timg.jpg) center center no-repeat fixed;background-si
 	width: 300px;
 	height: 300px;
 	position: relative;
-	margin: 100px auto;
 	font-family: 'font';
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;

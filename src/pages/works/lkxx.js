@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-export default class Dasishixi extends Component{
+export default class Lkxx extends Component{
   constructor(props){
     super(props);
     this.state = {
@@ -15,7 +15,7 @@ export default class Dasishixi extends Component{
   render(){
     return(
       <div>
-         201306
+         201306 + Lkxx
       </div>
     );
 
