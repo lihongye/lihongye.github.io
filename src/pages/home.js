@@ -44,7 +44,7 @@ export default class Home extends Component{
     },200);
 
     _this.swiper = new _this.state.swiper('.swiper-container', {
-        //loop:true, 循环的滚动会有写问题
+        //loop:true, //循环的滚动会有写问题
         autoplay:true,
         slidesPerView: 4,
         spaceBetween: 15,

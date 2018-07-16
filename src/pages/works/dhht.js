@@ -42,6 +42,13 @@ export default class Dhht extends Component{
                 {info:'公司清仓活动', marker:'pw-', search:'20160712',time:"2016-07-12"},
                 {info:'清仓第二版', marker:'pw-', search:'20160713',email:'0',time:"2016-07-13"},
                 {info:'第二轮公司清仓', marker:'pw-', search:'20160802',time:"2016-08-02"},
+                {info:'APPLE& SUMSUNG 配件清仓', marker:'pw-', search:'20160808',email:'0',time:"2016-08-08"},
+                {info:'香港仓产品清仓', marker:'pw-', search:'20160901',email:'0',time:"2016-09-01"},
+                {info:'秋季', marker:'pw-', search:'20161027',email:'0',time:"2016-10-27"},
+                {info:'双十一', marker:'pw-', search:'20161108',time:"2016-11-08"},
+                {info:'二手手机和平板', marker:'pw-', search:'20161115',email:'0',time:"2016-11-15"},
+                {info:'黑色星期五', marker:'pw-', search:'20161124',email:'0',time:"2016-11-24"},
+                {info:'圣诞节', marker:'pw-', search:'20161220',time:"2016-12-20"},
               ]
             },
             {

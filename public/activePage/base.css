@@ -1,5 +1,5 @@
 *{margin: 0px; padding: 0px;}
-body{font-family: 'Microsoft Yahei',sans-serif;}
+body{font-family: 'Microsoft Yahei',sans-serif;min-width: 1110px;}
 /*浮动与清除浮动*/
 .r{float: right;}
 .l{float: left;}
@@ -16,3 +16,9 @@ a {text-decoration: none;}
 .w1024 {width: 1024px;margin:0px auto 10px;}
 .w1200{width: 1200px;margin: 0 auto;}
 .w1022{width: 1022px;margin: 0 auto;}
+.w1110 {width:1110px;margin: 0 auto;}
+.w1130{width: 1130px; margin: 0 auto;}
+.w986 {width:986px;margin:0 auto;}
+@media (max-width: 1450px){
+	.panel-layout {right: 0;}
+}
