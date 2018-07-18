@@ -53,10 +53,10 @@ export default class Dhht extends Component{
             {
               subTitle:"法语/西语/葡语网站",
               active:[
-                {info:'春季主题清仓活动', marker:'pw-', search:'20160409',time:"2016-04-06"},
-                {info:'蓝牙产品专场活动', marker:'pw-', search:'20160418',time:"2016-04-18"},
-                {info:'春季主题清仓活动', marker:'pw-', search:'20160409',time:"2016-04-06"},
-                {info:'蓝牙产品专场活动', marker:'pw-', search:'20160418',time:"2016-04-18"},
+                {info:'西仓资金占用产品清仓', marker:'es', search:'20160311',time:"2016-03-11"},
+                {info:'父亲节', marker:'es', search:'20160316',time:"2016-03-16"},
+                {info:'复活节', marker:'es', search:'20160323',time:"2016-03-23"},
+                {info:'父亲节', marker:'es', search:'20160316',email:'0',time:"2016-03-16"},
               ]
             },
           ],
