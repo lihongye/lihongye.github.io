@@ -58,6 +58,8 @@ export default class Dhht extends Component{
                 {info:'复活节', marker:'es', search:'20160323',time:"2016-03-23"},
                 {info:'春季主题清仓', marker:'es', search:'20160407',email:'0',time:"2016-04-07"},
                 {info:'四月节集市', marker:'es', search:'20160413',email:'0',time:"2016-04-13"},
+                {info:'米粉节', marker:'es', search:'20160421',email:'0',time:"2016-04-21"},
+                {info:'母亲节', marker:'es', search:'20160428',time:"2016-04-28"},
               ]
             },
           ],

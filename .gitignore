@@ -9,6 +9,9 @@
 # production
 /build
 /src/img
+/public/img
+/public/activePage/images
+/public/email/images
 .project
 package-lock.json
 
