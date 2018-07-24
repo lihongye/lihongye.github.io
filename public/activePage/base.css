@@ -10,6 +10,7 @@ body{font-family: 'Microsoft Yahei',sans-serif;min-width: 1110px;}
 ul li {list-style: none;}
 a {text-decoration: none;}
 .w1050 {width:1050px;margin: 0 auto;}
+.w1058 {width: 1058px;margin:0 auto;}
 .w1000 {width: 1000px;margin:0 auto;}
 .w1100{width: 1100px;margin: 0 auto;}
 .w984 {width: 984px;margin: 0 auto;}
@@ -19,6 +20,7 @@ a {text-decoration: none;}
 .w1110 {width:1110px;margin: 0 auto;}
 .w1130{width: 1130px; margin: 0 auto;}
 .w986 {width:986px;margin:0 auto;}
+.w950 {width: 950px;margin:0 auto;}
 @media (max-width: 1450px){
 	.panel-layout {right: 0;}
 }
