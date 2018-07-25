@@ -2,7 +2,7 @@
     <div class="hd-banner-bg">
         <div class="hd-banenr">
             <div class="banner-text">
-                Entrar<a href="#"> pandawill.com >></a>
+                
             </div>
         </div>
     </div>
@@ -124,6 +124,14 @@
 
 <script type="text/javascript">
     (function ($) {
+        var marker = GetQueryString("marker");
+        if(marker == 'es'){
+            $(".banner-text").append(`Entrar <a href="#">Geekvida.es >></a>`);
+        }else if(marker == 'pw'){
+            $(".banner-text").append(`Entrar<a href="#"> pandawill.com >></a>`);
+        }else{
+
+        }
         var str2 = ` <li>
                         <a href="#">
                             <img src="./images/2016040616.jpg" alt="Blackview Ultra A6 Plus 2GB 16GB Dorado">

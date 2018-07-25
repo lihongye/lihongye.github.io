@@ -68,6 +68,9 @@ export default class Dhht extends Component{
                 {info:'EIE', marker:'es', search:'20160622',email:'0',time:"2016-06-22"},
                 {info:'年中清仓', marker:'es', search:'20160630',time:"2016-06-30"},
                 {info:'公司清仓', marker:'es', search:'20160711',time:"2016-07-11"},
+                {info:'奥运会', marker:'es', search:'20160726',time:"2016-07-26"},
+                {info:'第二轮公司清仓', marker:'es', search:'20160802',time:"2016-07-29"},
+                {info:'小米专题', marker:'es', search:'20160811',email:'0',time:"2016-08-11"},
               ]
             },
           ],
@@ -102,7 +105,7 @@ export default class Dhht extends Component{
                       {
                         el.active ? el.active.map((elSecond, index) => {
                           return <tr key={index}>
-                              <td><a className="link" href={ `/activePage/hdPage.html?name=${elSecond.marker}${elSecond.search}`} target="__blank">{ `${elSecond.info}活动` }</a></td>
+                              <td><a className="link" href={ `/activePage/hdPage.html?name=${elSecond.search}&marker=${elSecond.marker}`} target="__blank">{ `${elSecond.info}活动` }</a></td>
                               <td>
                                 { elSecond.email === "0" ? '' : <a className="link" href={ `/email/${elSecond.marker}-email.html?name=${elSecond.search}` } target="__blank">{`邮件 (${elSecond.time})` }</a>}
                               </td>
