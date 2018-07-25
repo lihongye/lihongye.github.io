@@ -70,7 +70,10 @@ export default class Dhht extends Component{
                 {info:'公司清仓', marker:'es', search:'20160711',time:"2016-07-11"},
                 {info:'奥运会', marker:'es', search:'20160726',time:"2016-07-26"},
                 {info:'第二轮公司清仓', marker:'es', search:'20160802',time:"2016-07-29"},
-                {info:'小米专题', marker:'es', search:'20160811',email:'0',time:"2016-08-11"},
+                {info:'小米专题', marker:'es', search:'20160811',time:"2016-08-11"},
+                {info:'meizu 专题', marker:'es', search:'20160812',email:'0',time:"2016-08-12"},
+                {info:'清仓', marker:'es', search:'20160823',email:'0',time:"2016-08-23"},
+                {info:'XIAOMI 单品推荐', marker:'es', search:'20160826',time:"2016-08-26"},
               ]
             },
           ],

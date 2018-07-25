@@ -8,7 +8,7 @@ body{font-family: 'Microsoft Yahei',sans-serif;min-width: 1110px;}
 .clearfloat:after{clear: both}
 .clearfloat{*zoom:1}
 ul li {list-style: none;}
-a {text-decoration: none;}
+a {text-decoration: none;outline: none;}
 .w1050 {width:1050px;margin: 0 auto;}
 .w1058 {width: 1058px;margin:0 auto;}
 .w1000 {width: 1000px;margin:0 auto;}
@@ -21,6 +21,8 @@ a {text-decoration: none;}
 .w1130{width: 1130px; margin: 0 auto;}
 .w986 {width:986px;margin:0 auto;}
 .w950 {width: 950px;margin:0 auto;}
+.w970 {width:970px;margin:0px auto;}
+.w990 {width:990px;margin: 0 auto;}
 @media (max-width: 1450px){
 	.panel-layout {right: 0;}
 }
