@@ -74,6 +74,8 @@ export default class Dhht extends Component{
                 {info:'meizu 专题', marker:'es', search:'20160812',email:'0',time:"2016-08-12"},
                 {info:'清仓', marker:'es', search:'20160823',email:'0',time:"2016-08-23"},
                 {info:'XIAOMI 单品推荐', marker:'es', search:'20160826',time:"2016-08-26"},
+                {info:'iphone翻新机', marker:'es', search:'20160831',email:'0',time:"2016-08-31"},
+                {info:'中秋节', marker:'es', search:'20160908',time:"2016-09-08"},
               ]
             },
           ],
