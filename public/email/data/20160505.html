@@ -1,31 +1,31 @@
-
 <script type="text/javascript">
     (function ($) {
-        function changeStr1(item) {
-            return `<tr>
-                        <td height="${item}"></td>
-                    </tr>`
-        }
-        function changeStr2(item) {
-            return `<tr>
-                        <td style=" vertical-align:bottom;">
-                            <a href="#">
-                                <img width="100%" style="width:100%; border:0; margin:0; display:block; padding:0; overflow:hidden;" src="./images/${item}.jpg"
-                                    alt="Espejo de maquillaje con LED flash">
-                            </a>
-                    </tr>`
-        }
-        function changeStr3(item) {
-            return ` <tr>
-                        <td style="vertical-align:bottom;">
-                            <p style="font-size: 24px;color:#e31e30;line-height: 25px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">${item}</p>
-                        </td>
-                    </tr>`
-        }
-        function changeStr4(item) {
-            return ` <tr>
-                        <td height="80" style="font-size: 40px; color: #333; line-height: 40px; font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif; text-align: center; font-weight: bold;">${item}</td>
-                    </tr>`
+        function changeStr1(w1, w2, item) {
+            return `<table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td height="20"></td>
+                                <td height="20"></td>
+                                <td height="20"></td>
+                            </tr>
+                            <tr>
+                                <td width="${w1}%" style=" vertical-align:middle;">
+                                    <div style="font-size: 35px;color:#333;line-height: 35px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;height: 0px;border-bottom: 2px dashed #333;"></div>
+                                </td>
+                                <td width="${w2}%" style="vertical-align:bottom;">
+                                    <p style="font-size: 35px;color:#333;line-height: 35px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">${item}</p>
+                                </td>
+                                <td width="${w1}%" style=" vertical-align:middle;">
+                                    <div style="font-size: 35px;;color:#333;line-height: 35px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;height: 0px;border-bottom: 2px dashed #333;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20"></td>
+                                <td height="20"></td>
+                                <td height="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>`
         }
         var str1 = ` <td style="vertical-align:bottom;background: #fff;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;">
                         <a href="#" style="text-decoration: none;color:#333;display:block;">
@@ -47,24 +47,30 @@
                             </tbody>
                         </table>
                     </td>`,
-            str3 = `<table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center"><tbody>`
-            str2 = `${str3}
-                        <tr>
-                            <td height="340" style="vertical-align:bottom;">
+            str2 = ` <tr>
+                        <td style="vertical-align:bottom;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;">
+                            <p style="font-size: 24px;color:#fff;line-height: 55px;margin:0px;">
+                                <a style="background:#11b6d6;padding: 3px 10px;color:#fff;text-decoration: none;" href="#">Ver más&gt;&gt;</a>
+                            </p>
+                        </td>
+                    </tr>`
+        str3 = `<table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
                                 ${str1}
-                            </td>
-                            <td width="15"></td>
-                            <td height="340" style="vertical-align:bottom;">
+                                <td width="10"></td>
                                 ${str1}
-                            </td>
-                            <td width="15"></td>
-                            <td height="340" style="vertical-align:bottom;">
+                                <td width="10"></td>
                                 ${str1}
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>`;
-     
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str4 = `<table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td height="10"></td>
+                            </tr>`;
+
         var str10 = `<table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tbody>
                             <tr>
@@ -76,206 +82,24 @@
                             </tr>
                         </tbody>
                     </table>
-
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                            </tr>
-                            <tr>
-                                <td width="40%" style=" vertical-align:middle;">
-                                    <div style="font-size: 35px;color:#333;line-height: 35px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;height: 0px;border-bottom: 2px dashed #333;"></div>
-                                </td>
-                                <td width="20%" style="vertical-align:bottom;">
-                                    <p style="font-size: 35px;color:#333;line-height: 35px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">iPhone</p>
-                                </td>
-                                <td width="40%" style=" vertical-align:middle;">
-                                    <div style="font-size: 35px;;color:#333;line-height: 35px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;height: 0px;border-bottom: 2px dashed #333;"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                            </tr>
+                    ${changeStr1('40', '20', 'iPhone') + str3 + str4}
+                   
                         </tbody>
                     </table>
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                            </tr>
+                    ${str3 + str4 + str2}
                         </tbody>
                     </table>
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td height="10"></td>
-                            </tr>
-
+                    ${changeStr1('20', '60', 'Accesorios para iPhone') + str3 + str4 + str2}
                         </tbody>
                     </table>
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                            </tr>
+                    ${changeStr1('18', '64', 'Pantalla LCD para iPhone') + str3 + str4}
                         </tbody>
                     </table>
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td height="10"></td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align:bottom;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;">
-                                    <p style="font-size: 24px;color:#fff;line-height: 55px;margin:0px;">
-                                        <a style="background:#11b6d6;padding: 3px 10px;color:#fff;text-decoration: none;" href="#">Ver más&gt;&gt;</a>
-                                    </p>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                            </tr>
-                            <tr>
-                                <td width="20%" style=" vertical-align:middle;">
-                                    <div style="font-size: 35px;color:#ab6f38;line-height: 35px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;height: 0px;border-bottom: 2px dashed #ab6f38;"></div>
-                                </td>
-                                <td width="60%" style="vertical-align:bottom;">
-                                    <p style="font-size: 35px;color:#ab6f38;line-height: 35px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">Accesorios para iPhone</p>
-                                </td>
-                                <td width="20%" style=" vertical-align:middle;">
-                                    <div style="font-size: 35px;;color:#ab6f38;line-height: 35px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;height: 0px;border-bottom: 2px dashed #ab6f38;"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td height="5">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align:bottom;">
-                                    <p style="font-size: 24px;color:#fff;line-height: 55px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">
-                                        <a style="background:#11b6d6;padding: 3px 10px;color:#fff;text-decoration: none;" href="http://www.geekvida.es/movil/iphone/accesorios-para-iphone.html">Ver más&gt;&gt;</a>
-                                    </p>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                            </tr>
-                            <tr>
-                                <td width="18%" style=" vertical-align:middle;">
-                                    <div style="font-size: 35px;color:#333;line-height: 35px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;height: 0px;border-bottom: 2px dashed #333;"></div>
-                                </td>
-                                <td width="64%" style="vertical-align:bottom;">
-                                    <p style="font-size: 35px;color:#333;line-height: 35px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">Pantalla LCD para iPhone</p>
-                                </td>
-                                <td width="18%" style=" vertical-align:middle;">
-                                    <div style="font-size: 35px;;color:#333;line-height: 35px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;height: 0px;border-bottom: 2px dashed #333;"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                                <td height="20"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td height="10"></td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                                <td width="10"></td>
-                                ${str1}
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table width="100%" bgcolor="#dfdfdf" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td height="10">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align:bottom;">
-                                    <p style="font-size: 24px;color:#fff;line-height: 55px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">
-                                        <a style="background:#11b6d6;padding: 3px 10px;color:#fff;text-decoration: none;" href="#">Ver más&gt;&gt;</a>
-                                    </p>
-                                </td>
-                            </tr>
+                    ${str3 + str4 + str2}
                             <tr>
                                 <td height="20">
                                 </td>
                             </tr>
-
                         </tbody>
                     </table>`;
         $("#main").prepend(str10);
