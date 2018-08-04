@@ -10,6 +10,11 @@
                         </td>
                     </tr>`
         }
+        function tdH(item) {
+            return `<tr>
+                        <td height="${item}"></td>
+                    </tr>`
+        }
         function tdC(item) {
             return ` <td width="155" style="vertical-align:bottom;background:rgba(${item});">
                         ${str1_1}>
@@ -30,9 +35,7 @@
                                         </a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td height="15"></td>
-                                </tr>
+                                ${tdH('15') }
                             </tbody>
                         </table>
                     </td>`
@@ -41,9 +44,7 @@
             return ` <td style=" vertical-align:bottom;background:rgba(${item});">
                         ${str1_1}>
                             <tbody>
-                                <tr>
-                                    <td height="15"></td>
-                                </tr>
+                                ${tdH('15') }
                                 <tr>
                                     <td>
                                         <a href="#">
@@ -60,17 +61,13 @@
                         <td style="vertical-align: bottom;background: url(./images/201609222.jpg) no-repeat center top;">
                             ${str1_1}>
                                 <tbody>
-                                    <tr>
-                                        <td height="25"></td>
-                                    </tr>
+                                    ${tdH('25') }
                                     <tr>
                                         <td align="center">
                                             <img src="./images/201609222.png">
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td height="10"></td>
-                                    </tr>
+                                    ${tdH('10')}
                                     <tr>
                                         <td align="center" height="34">
                                             <a style="text-decoration: none;" href="#">
@@ -126,9 +123,7 @@
                         </table>
                         ${str1_1} style="background:#E5601F;">
                             <tbody>
-                                <tr>
-                                    <td height="10"></td>
-                                </tr>
+                                ${tdH('10')}
                                 <tr>
                                     <td style="vertical-align:middle;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif; text-align: center;">
                                         <a href="#" style="text-decoration: none;display:block;">
@@ -143,9 +138,7 @@
                                         </a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td height="10"></td>
-                                </tr>
+                                ${tdH('10')}
                             </tbody>
                         </table>
                         ${str1_1}>
@@ -154,9 +147,7 @@
                             </tbody>
                         </table>
                     </td>`,
-            str3 = `<tr>
-                        <td height="10"></td>
-                    </tr>
+            str3 = `${tdH('10')}
                     <tr>
                         <td>
                             <table width="700" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -185,18 +176,13 @@
                             </table>
                         </td>
                     </tr>
-                    <tr>
-                        <td height="10"></td>
-                    </tr>
+                    ${tdH('10')}
                     <tr>
                         <td align="right" height="34">
                             <a href="#" style="font-weight:bold;font-size:18px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;padding:5px 10px;background:#e5601f;color:#fff;text-decoration: none;">Ver más &gt;&gt;</a>
                         </td>
                     </tr>
-                    <tr>
-                        <td height="10"></td>
-                    </tr>`,
-            str4 = ``;
+                    ${tdH('10')}`;
         var str10 = `${str1_1} style="background:#ffe49d">
                             <tbody>
                                 <tr>
@@ -206,14 +192,8 @@
                                         </a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td height="15"></td>
-                                </tr>
-                                
-                                                ${trT('Con gran diseño,características potentes y precio competitivo.')}
-                                                <tr>
-                                                    <td height="10"></td>
-                                                </tr>
+                                ${tdH('15') +　trT('Con gran diseño,características potentes y precio competitivo.') + tdH('10')}
+                                               
                                                 <tr>
                                                     <td style="vertical-align: top;">
                                                         ${str1_1}>

@@ -1,0 +1,127 @@
+<div class="hd-20161025">
+      <div class="hd-banner-bg banner-bg1">
+        <div class="hd-banenr" style="height:227px;">
+          <div class="banner-text">
+            Entrar <a href="#">Geekvida.es >></a>
+          </div>
+        </div>
+      </div>
+       <div class="hd-banner-bg banner-bg2">
+      </div>
+      <div class="hd-banner-bg banner-bg3">
+        <div class="hd-banenr" style="height:347px;">
+          <div class="panel-layout"></div>
+        </div>
+      </div>
+      <div class="hd-main-content"></div>
+    </div>
+    <style>
+      .hd-20161025{background: #000;}
+      .hd-20161025 .hd-banner-bg{width: 100%;}
+      .hd-20161025 .banner-bg1{height:227px;background: url(./images/201610254.jpg) no-repeat center;}
+      .hd-20161025 .banner-bg2{height:251px;background: url(./images/201610255.jpg) no-repeat center;}
+      .hd-20161025 .banner-bg3{height:347px;background: url(./images/201610256.jpg) no-repeat center;}
+      .hd-20161025 .hd-banenr{position: relative;width: 1190px;margin: 0px auto;}
+      .hd-banenr .banner-text{position: absolute;right: 0px;font-size: 14px;width: 180px;text-align: center;border: 1px solid #dedede;background: #fff;padding: 5px;}
+      .hd-main-content {background: url(./images/201610253.jpg) no-repeat center top fixed;padding-bottom: 110px;}
+      .hd-main-content .title {padding-top:80px;text-align: center;}
+      .hd-main-content #display1 .title {padding-top:0px;}
+      .hd-banenr .banner-text a{color:#02b717;}
+      .hd-display-block .display-title{text-align: left;margin-bottom: 0px;}
+      .hd-product-list ul li{width: 230px;background: #000;float: left;margin:5px;position: relative;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-ms-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
+      .hd-product-list ul li:hover{transform: translateY(-6px);-webkit-transform: translateY(-6px);-o-transform: translateY(-6px);-ms-transform: translateY(-6px);-moz-transform: translateY(-6px);}
+      .hd-product-list .hd-product-img {display: block;width:100%;background: #fff;}
+      .hd-product-list .hd-product-img img {width: 90%;padding: 10px;}
+      .hd-product-list .review-wrapper p{height: 40px;width: 100%;margin: 0px;text-align: left;overflow: hidden;}
+      .hd-product-list .review-wrapper p a{color: #fff;font-size: 14px;padding: 3px 5px;display: block;line-height: 20px;}
+      .hd-product-list ul li:hover .review-wrapper p a{color:#fff;}
+      .hd-product-list  .hd-buy-area {margin-top: 10px;}
+      .hd-product-list  .price-area{margin: 5px 0px 5px;float: left;text-align: left;height: 45px;position: relative;}
+      .hd-product-list  .old-price{font-size: 14px;text-decoration: line-through;line-height: 15px;color: #666;display: block;}
+      .hd-product-list  .current-price{font-size: 25px;font-weight: bold;color: #f16101;line-height: 30px;position: absolute;bottom: 0px;}
+      .hd-product-list .hd-btn-buy{display: block;float: right;}
+      .hd-product-list .hd-btn-buy img {width:115px;}
+      .display .hd-btn-more:hover {-webkit-animation:none;animation: none;}
+      .hd-20161025 .panel-layout {position: absolute;top: 90px;}
+      .panel-layout ul li{list-style: none;float: left;width: 238px;height: 120px;overflow: hidden;position: relative;-webkit-transition: all 0.6s ease;-moz-transition: all 0.6s ease;-ms-transition: all 0.6s ease;-o-transition: all 0.6s ease;transition: all 0.6s ease;}
+      .panel-layout .panel-link .hover{position: absolute;top: 0px;left: 0px;opacity: 0;-webkit-transition: all 0.6s ease;-moz-transition: all 0.6s ease;-ms-transition: all 0.6s ease;-o-transition: all 0.6s ease;transition: all 0.6s ease;}
+      .panel-layout .panel-link:hover .hover, .panel-layout li.current .hover {opacity: 1;}
+    </style>
+
+    <script type="text/javascript">
+       (function($){
+        $(function(){
+          var str1 = '', str2 = '', str3 = '', str4 = '';
+          for(var i = 0; i < 15; i ++){
+            str1 += `<li>
+                    <a class="hd-product-img" href="#"><img src="./images/2016040616.jpg" alt="Blackview Ultra A6 Plus 2GB 16GB Dorado"></a>
+                     <div class="review-wrapper">
+                      <p><a href="#">Blackview Ultra A6 Plus 2GB 16GB Dorado</a></p>
+                    </div>
+                    <div class="hd-buy-area clearfloat">
+                      <div class="price-area">
+                        <a href="#">
+                          <span class="old-price">199.99€</span>
+                          <span class="current-price">145.99€</span>
+                        </a>
+                      </div>
+                      <a href="#" class="hd-btn-buy"><img src="./images/2016102512.png"></a>
+                    </div>
+                  </li>`;
+          }
+          for(var i = 0; i < 5; i++){
+            if(i%2 != 0){
+              str4 = `style="margin-top:50px;"`;
+            }else{
+              str4 = '';
+            }
+            str2 += `<div id="display${i+1}">
+                      <h2 class="title"><img src="./images/201610257.png" alt="Xiaomi"></h2>
+                      <div class="hd-display-block">
+                        <div class="display w1200">
+                          <div class="hd-product-list">
+                            <ul class="clearfloat">${str1}</ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>`;
+            str3 += `<li ${str4}>
+                      <a class="panel-link" href="#display${i+1}">
+                        <img class="normal" src="./images/201610251-1.png">
+                        <img class="hover" src="./images/201610251-2.png">
+                      </a>
+                    </li>`;
+          }
+          $(".hd-main-content").prepend(str2);
+          $(".panel-layout").prepend(`<ul class="clearfloat">${str3}</ul>`); 
+
+          var sideNav = $(".panel-layout");
+          $(window).on("scroll",function(){
+              var modTop = [];
+              if($(this).scrollTop()>=480){
+                  sideNav.css({"position":"fixed","top":"0px","z-index":"9999"});
+                  sideNav.find("ul li:even").css({"margin-top":"50px"});
+                }
+                else{
+                  sideNav.css({"position":"absolute","top":"90px"});
+                  sideNav.find("ul li:even").css({"margin-top":"0px"});
+                }
+              for (var i = 0; i < $(".panel-layout ul li a").length; i++) {
+                  modTop[i] = $($(".panel-layout ul li a").eq(i).attr("href")).offset().top-100;
+
+                  if ($(window).scrollTop() >= modTop[i]) {
+                    $(".panel-layout ul li").removeClass('current').eq(i).addClass('current');
+                  };
+              };
+          });
+
+          sideNav.find("li").find(".panel-link").on("click",function(e){
+            e.preventDefault();
+            var aHash = this.hash;
+            $("html,body").animate({
+              scrollTop: $(aHash).offset().top-80
+            });
+          });
+        });
+      })(jQuery);
+    </script>

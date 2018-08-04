@@ -1,0 +1,152 @@
+<div class="hd-20161105">
+    <div class="hd-banner-bg banner-bg1">
+      <div class="hd-banenr">
+        <div class="banner-text">
+            Entrar <a href="#">Geekvida.es >></a>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="hd-main-content w1065">
+      <!-- <div class="hd-display-container" id="display1">
+        <h2 class="title">
+          <img class="title-text" src="./images/201611052.jpg" alt="Zona de 11.11 € ">
+        </h2>
+        <div class="hd-display-block">
+          <div class="display">
+            <div class="hd-product-list">
+                <ul class="lis1 clearfloat"></ul>
+            </div>
+          </div>
+         </div>
+      </div>
+     
+      <div class="hd-display-container" id="display2">
+        <h2 class="title">
+          <img class="title-text" src="./images/201611053.jpg" alt="Zona de 5.99 € ">
+        </h2>
+        <div class="hd-display-block">
+          <div class="display">
+            <div class="hd-product-list">
+                <ul class="lis1 clearfloat"></ul>
+            </div>
+          </div>
+         </div>
+      </div>
+      <div class="hd-display-container" id="display3">
+        <h2 class="title">
+          <img class="title-text" src="./images/201611054.jpg" alt="Zona de 1.11 € ">
+        </h2>
+        <div class="hd-display-block">
+          <div class="display">
+            <div class="hd-product-list">
+              <ul class="lis1 clearfloat"></ul>
+            </div>
+          </div>
+         </div>
+      </div> -->
+      
+     <div class="panel-layout">
+        <ul>
+          <li><a href="#display1">Zona de 11.11 € </a></li>
+          <li><a href="#display2">Zona de 5.99 € </a></li>
+          <li><a href="#display3">Zona de 1.11€</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+<style>
+  .hd-20161105{background: #b60701;padding-bottom: 80px;}
+  .hd-20161105 .banner-bg1{height:496px;min-width: 1103px;background: url(./images/201611051.jpg) no-repeat center;}
+  .hd-20161105 .hd-banenr{height: 572;position: relative;width: 1103px;margin: 0px auto;}
+  .hd-banenr .banner-text{position: absolute;right: 0px;font-size: 14px;width: 180px;text-align: center;border: 1px solid #dedede;background: #fff;padding: 5px;}
+  .hd-display-container{text-align: center;}
+  .hd-display-container .title{text-align: center;}
+  .title .title-text {margin: 55px 20px 0px;}
+  .hd-banenr .banner-text a{color:#02b717;}
+  .hd-display-block .display-title{text-align: left;margin-bottom: 0px;}
+  .hd-product-list ul li{width: 245px;height:300px;background: #fff;float: left;margin:10px;position: relative;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-ms-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
+  .hd-product-list ul li:hover{transform: translateY(-6px);-webkit-transform: translateY(-6px);-o-transform: translateY(-6px);-ms-transform: translateY(-6px);-moz-transform: translateY(-6px);}
+  .hd-product-list .review-wrapper p{height: 35px;width: 100%;margin: 0px;text-align: center;overflow: hidden;}
+  .hd-product-list .review-wrapper p a{color: #666;font-size: 14px;padding: 3px 5px;display: block;line-height: 15px;}
+  .hd-product-list img{width: 90%;margin: 10px auto 0px;}
+  .hd-product-list .price-area{margin: 5px 0px 5px 8px;height: 48px;position: relative;float: left;}
+  .hd-product-list .old-price{font-size: 12px;color: #4d4436;text-decoration: line-through;}
+  .hd-product-list .current-price{font-size: 27px;font-weight: bold;color: #b40200;line-height: 30px;font-family: arial;position: absolute;left: 0px;bottom: 0px;}
+  .hd-product-list .hd-btn-buy{font-size: 15px;margin:30px 10px 0px 0px;color: #b40200;text-decoration: underline;float: right;}
+  .panel-layout{width: 191px;height: 325px;position: fixed;top: 0;margin-left: 1065px;background:url(./images/201611051.png) no-repeat center top;-webkit-transform: scale(0.01); -moz-transform: scale(0.01); -o-transform: scale(0.01); -ms-transform: scale(0.01); transform: scale(0.01); -webkit-transition: all .6s linear 0s; -moz-transition: all .6s linear 0s; -o-transition: all .6s linear 0s; -ms-transition: all .6s linear 0s; transition: all .6s linear 0s; visibility: hidden;}
+  .panel-layout.active { visibility: visible; -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1);}
+  .panel-layout ul {margin-top: 128px;}
+  .panel-layout ul li{list-style: none;margin: 0px auto 32px;}
+  .panel-layout ul li a{display: block;height: 38px;width: 100%;color: #bf1901;text-align: center;font-size: 15px;line-height: 38px;font-weight: bold;}
+  .panel-layout ul li.current a {color:#0076d6;}
+  .hd-product-list .hd-notice{position: absolute;bottom: 85px;text-align: center;width: 100%;background: rgba(0,0,0,0.5);color: #fff;padding: 10px;box-sizing: border-box;font-size: 15px;font-weight: bold;}
+</style>
+
+<script type="text/javascript">
+  (function($){
+      var str1 = '', str2 = '';
+      for(var i = 0; i <16; i++){
+        str1 += `<li>
+                  <a href="#"><img src="./images/2016040616.jpg" alt="Blackview Ultra A6 Plus 2GB 16GB Dorado"></a>
+                   <div class="review-wrapper">
+                    <p><a href="#">Blackview Ultra A6 Plus 2GB 16GB Dorado</a></p>
+                  </div>
+                  <div class="price-area">
+                    <a href="#">
+                      <span class="old-price">199.99€</span>
+                      <span class="current-price">145.99€</span>
+                    </a>
+                  </div>
+                  <a href="#" class="hd-btn-buy">Comprar &gt;&gt;</a>
+                  <div class="clearfloat"></div>
+                  <p class="hd-notice">COMING SOON...</p>
+                </li>`;
+      }
+      for(var i = 0; i < 3; i++){
+        str2 += `<div class="hd-display-container" id="display${i+1}">
+                  <h2 class="title">
+                    <img class="title-text" src="./images/20161105${i+2}.jpg" alt="Zona de 11.11 € ">
+                  </h2>
+                  <div class="hd-display-block">
+                    <div class="display">
+                      <div class="hd-product-list">
+                          <ul class="lis1 clearfloat">${str1}</ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+      }
+      $(".hd-main-content").prepend(str2);
+
+
+      var sideNav = $(".panel-layout");
+      $(window).on("scroll",function(){
+        var sideNavShow = 286;
+        var modTop = [];
+        if($(this).scrollTop()>=sideNavShow){
+            sideNav.addClass("active");
+          }
+          else{
+            sideNav.removeClass("active");
+          }
+        
+        for (var i = 0; i < $(".panel-layout ul li a").length; i++) {
+            modTop[i] = $($(".panel-layout ul li a").eq(i).attr("href")).offset().top-10;
+
+            if ($(window).scrollTop() >= modTop[i]) {
+              $(".panel-layout ul li").removeClass('current').eq(i).addClass('current');
+            };
+          };
+      });
+      
+      sideNav.find("li").find("a").on("click",function(e){
+        e.preventDefault();
+        var aHash = this.hash;
+        $("html,body").animate({
+          scrollTop: $(aHash).offset().top
+        });
+      });
+  })(jQuery); 
+</script>

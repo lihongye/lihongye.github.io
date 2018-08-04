@@ -1,0 +1,253 @@
+<script type="text/javascript">
+    (function ($) {
+        function tdI() {
+            var temStr = '';
+            for (var i = 0; i < 2; i++) {
+                temStr += `<img src="./images/201608293-${i + 1}.png" alt="" style="width:100%;margin:0px;border:0px;padding:0px;display: block;">`
+            }
+            return temStr
+        }
+        function taH(item) {
+            return `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td height="${item}"></td>
+                        </tr>
+                    </tbody>
+                </table>`
+        }
+        function tS(w2, h1) {
+            return `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:url(./images/201611224.jpg) no-repeat center top;">
+                    <tbody>
+                        ${trTd('55', 1)}
+                        <tr>
+                            <td>
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td height="100" style="vertical-align: bottom;text-align:center;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;">
+                                                <a href="#" style="display: block;color:#ffd36f;text-decoration: none;line-height: 30px;">
+                                                    <span style="font-size:40px;font-weight: bold;display: block;">${w2}</span>
+                                                    <span style="font-size:16px;">${h1}</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>`
+        }
+        function trTd(h, s) {
+            var tempStr = '';
+            for(var i = 0; i < s; i++){
+                tempStr += `<td height="${h}"></td>`;
+            }
+            return `<tr>${tempStr}</tr>`
+        }
+        var str1 = ` <td width="207">
+                        <a href="#"
+                            style="display: block;">
+                            <img src="./images/201606032.jpg" style="width:200px;height:177px;margin:0px auto;border:0px;padding:0px;display: block;"
+                                alt="Elephone P6i Black+Silver">
+                        </a>
+                        <a href="#"
+                            style="display: block;text-decoration: none;text-align: center;padding:10px 0px 0px 0px;font-weight:bold;">
+                            <span style="font-size:15px;color:#500047;line-height: 15px;display: block;">Elephone P6i
+                                <br>Black+Silver</span>
+                            <span style="font-size:16px;color:#500047;line-height: 22px;display: block;padding: 5px 0px 0px 0px;">
+                                <span style="text-decoration: line-through;">$42.99</span>
+                                <br>
+                                <span style="font-size:32px;color:#f40319;">$34.99</span>
+                            </span>
+                        </a>
+                    </td>`,
+            str2 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="background:rgba(0, 0, 0, 0.6);border:1px solid #fff;">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            ${trTd('20', 3)}
+                                            <tr>
+                                                <td width="15"></td>
+                                                <td>
+                                                    <a href="#" style="display: block;">
+                                                        ${tdI()}
+                                                    </a>
+                                                </td>
+                                                <td width="15"></td>
+                                            </tr>
+                                            ${trTd('15', 3)}
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <a href="#" style=" display: block; background: #fff; color: #000; font-size: 14px; text-align: center; text-decoration: none; line-height: 15px; padding: 5px 0px;">Xiaomi Redmi Note 3 Pro
+                                        <br>2GB 16GB Gris</a>
+                                    <a href="#" style="display: block; background: url(./images/201611233.jpg) repeat;text-align: center; text-decoration: none; line-height: 15px;height:64px;">
+                                        <span style="font-weight: bold; color: #ff9c20; background: #1c1616; padding: 10px 10px 5px; margin-top: 11px; display: inline-block;font-size:20px;">
+                                            <span style="font-size:14px;color:#fff1d0;text-decoration: line-through;">209.99€</span>
+                                            <span style="font-size:35px;">149</span>.99€
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str3 = `<td width="320">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    <td style="background: #230606; border: 10px solid #866445; border-radius: 10px;">
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                            <tbody>
+                                                ${trTd('20', 3)}
+                                                <tr>
+                                                    <td width="30"></td>
+                                                    <td>
+                                                        <a href="#" style="display: block;">
+                                                            ${tdI()}
+                                                        </a>
+                                                    </td>
+                                                    <td width="30"></td>
+                                                </tr>
+                                                ${trTd('15', 3)}
+                                            </tbody>
+                                        </table>
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" style=" display: block;  color: #fff; font-size: 15px; text-align: center; text-decoration: none; line-height: 18px; padding: 5px 0px;">Xiaomi Redmi Note 3 Pro
+                                                            <br>2GB 16GB Gris</a>
+                                                        <a href="#" style="display: block; text-align: center; text-decoration: none; line-height: 15px;height:64px;">
+                                                            <span style="font-weight: bold; color: #ff9c20;padding: 10px 10px 5px; margin-top: 11px; display: inline-block;font-size:20px;">
+                                                                <span style="font-size:14px;color:#fff1d0;text-decoration: line-through;">209.99€</span>
+                                                                <span style="font-size:35px;">149</span>.99€
+                                                            </span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>`,
+            str4 = `<td width="339">
+                        <a href="#">
+                            <img src="./images/201611231.png" style="width:100%;margin:0px;border:0px;padding:0px;display: block;" alt="">
+                        </a>
+                    </td>`;
+        var str10 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:#0c0c0c;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img src="./images/201611231.jpg" style="width:100%;margin:0px;border:0px;padding:0px;display: block;" alt="black friday venta flash 2016">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    ${taH('40')}
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td width="10"></td>
+                                                ${str4}
+                                                <td width="2"></td>
+                                                ${str4}
+                                                <td width="10"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                                    ${tS('XIAOMI', '¡Muy Buen Rendimiento y Precio Asequible!') + taH('15')}
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="10"></td>
+                                                                <td width="220">
+                                                                    ${str2}
+                                                                </td>
+                                                                <td width="10"></td>
+                                                                <td width="220">
+                                                                    ${str2}
+                                                                </td>
+                                                                <td width="10"></td>
+                                                                <td width="220">
+                                                                    ${str2}
+                                                                </td>
+                                                                <td width="10"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    ${taH('15')}
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="120"></td>
+                                                                <td width="10"></td>
+                                                                <td width="220">
+                                                                    ${str2}
+                                                                </td>
+                                                                <td width="10"></td>
+                                                                <td width="220">
+                                                                    ${str2}
+                                                                </td>
+                                                                <td width="120"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ${taH('20') + tS('IPHONE & MEIZU', '¡Comprar Un móvil a Precio Increíble !') + taH('15')}
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="20"></td>
+                                                                ${str3}
+                                                                <td width="20"></td>
+                                                                ${str3}
+                                                                <td width="20"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    ${taH('15')}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ${taH('20') + tS('ALMACÉN CHINO', '¡Mas Barato,Sin aduana y Garantía en España!') + taH('15')}
+                                                    ${taH('15')}
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="20"></td>
+                                                                <td width="320">
+                                                                    ${str2}
+                                                                </td>
+                                                                <td width="20"></td>
+                                                                <td width="320">
+                                                                    ${str2}
+                                                                </td>
+                                                                <td width="20"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    ${taH('15')}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

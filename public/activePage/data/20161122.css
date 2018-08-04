@@ -1,0 +1,7 @@
+ .hd-20161115 {background:url(../images/201611242.jpg) repeat}
+  .hd-20161115 .banner-bg1{background: url(../images/201611221.jpg)no-repeat center top;height: 825px;}
+  #countdown-item1{width: 1040px;height: 140px;margin: -70px auto 25px;background: url(../images/201611222.jpg)no-repeat center;text-align: center;}
+  .review-wrapper{text-align: center;padding: 5px;background: url(../images/201611223.jpg)no-repeat center;height: 75px;overflow: hidden;position: relative;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;-ms-background-size: cover;background-size: cover;}
+  .hd-20161115 .hd-banenr{height: 825px;position: relative;width: 1103px;margin: 0px auto;}
+  .panel-layout ul li a{display: block;width: 100%;color: #fff;text-align: center;font-size: 13px;padding: 5px 0px;}
+  .panel-layout ul li.current a {color:#fff100;}

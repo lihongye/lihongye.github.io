@@ -1,0 +1,243 @@
+<script type="text/javascript">
+    (function ($) {
+        function tdI() {
+            var temp = ``;
+            for(var i = 0; i < 2; i++ ){
+                temp += `<img src="./images/201608293-${i+1}.png" alt="" style="width:100%;margin:0px;border:0px;padding:0px;display: block;">` 
+            }
+            return ` <td>
+                        <a href="#" style="display: block;">
+                            ${temp}
+                        </a>
+                    </td>`
+        }
+        function tdH(item) {
+            return `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td height="${item}"></td>
+                            </tr>
+                        </tbody>
+                    </table>`
+        }
+        function tdT() {
+            var temp = '';
+            for(var i = 0; i < 3; i++){
+                temp += ` <td width="10"></td>${str2}`;
+            }
+            return `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                ${temp}
+                                <td width="10"></td>
+                            </tr>
+                        </tbody>
+                    </table>`
+        }
+        function tbT(c1) {
+            var temp = '', temp2 = ``;
+            for(var i = 0; i < 3; i++){
+                temp += `<td height="10"></td>`;
+                temp2 += `<td style="background:#${c1};height:25px;"></td>`;
+            }
+            return `<td width="150" style="background:#fff;">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    ${temp}
+                                </tr>
+                                <tr>
+                                    <td width="5"></td>
+                                    ${tdI()}
+                                    <td width="5"></td>
+                                </tr>
+                                <tr>
+                                    ${temp}
+                                </tr>
+                                <tr>
+                                    ${temp2}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>`
+        }
+
+        function tdB(w1, w2, c1) {
+            return `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td height="15"></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;">
+                                    <a href="#" style="text-decoration: none;display:block;">
+                                        <span style="display:block;font-size:40px;line-height:40px;color:#ac0000;margin:0px 0px 5px 0px;padding:0px;font-weight:bold;">${w1}</span>
+                                        <span style="color:#${c1};font-size:16px;line-height:16px;margin:0px;padding:0px;">${w2}</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>`
+        }
+        function tT(c1, c2, c3, p) {
+            return `<td width="175" style="vertical-align: top;">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    <td height="20"></td>
+                                </tr>
+                                <tr>
+                                    <td style="background:#${c1};height:204px;vertical-align: middle;padding:${p}">
+                                        <a href="#" style="display: block;text-decoration: none;font-size:16px;color:#${c3};">
+                                            <span style="display: block;line-height:18px;margin-bottom:20px;">Redmi Note 4
+                                                <br>2GB 16GB Gris</span>
+                                            <span style="display: block;text-decoration: line-through;line-height:18px;">214.99€</span>
+                                            <span style="color:#${c2};font-size:35px;font-weight: bold;line-height:35px;">214</span>
+                                            <span style="color:#${c2};">.99€</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>`
+        }
+
+        var str1 = ``,
+            str2 = `<td width="210">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:#2c5800;border-radius: 150px;">
+                            <tbody>
+                                <tr>
+                                    <td width="20"></td>
+                                    ${tdI()}
+                                    <td width="20"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    <td height="10"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;">
+                                        <a href="#" style="display: block;text-decoration: none;">
+                                            <span style="color:#2c5800;font-size:16px;line-height:18px;">Redmi 3S Pro
+                                                <br>3GB 32GB Dorado</span>
+                                            <font style="display:block;font-size:16px;">
+                                                <span style="color:#666;text-decoration: line-through;">179.99€</span>
+                                                <span style="color:#ff0000;font-size:30px;font-weight: bold;">179</span>
+                                                <span style="color:#ff0000;">.99€</span>
+                                            </font>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="15"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>`
+            str3 = ``;
+        var str10 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:#2c5800;">
+                        <tbody>
+                            <tr>
+                                <td height="15"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td width="15"></td>
+                                                <td>
+                                                    <a href="#">
+                                                        <img src="./images/201612291.jpg" style="width:100%;margin:0px;border:0px;padding:0px;display: block;" alt="feliz dia de los reyes y nuevo ano 2016">
+                                                    </a>
+                                                </td>
+                                                <td width="15"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td width="15"></td>
+                                                <td style="background:#f6c193">
+                                                    ${tdB('xiaomi', '¡Muy Buen Rendimiento, regalos recomendables!', 'a45100') + tdT()}
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                ${tT('2c5800', 'fff100', 'fff', '0px')}
+                                                                ${tbT('2c5800')}
+                                                                <td width="20"></td>
+                                                                ${tT('2c5800', 'fff100', 'fff', '0px 0px 0px 15px')}
+                                                                ${tbT('2c5800')}
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    ${tdH('10')}
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                ${tT('2c5800', 'fff100', 'fff', '0px')}
+                                                                ${tbT('2c5800')}
+                                                                <td width="20"></td>
+                                                                ${tT('2c5800', 'fff100', 'fff', '0px 0px 0px 15px')}
+                                                                ${tbT('2c5800')}
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    ${tdH('20') +　tdT()}
+                                                </td>
+                                                <td width="15"></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td width="15"></td>
+                                                <td style="background:#63F1F8">
+                                                    ${tdB('IPHONE & MEIZU', '¡Comprar Un móvil a Precio Increíble !', '00686d')}
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                ${tbT('FFF100')}
+                                                                ${tT('FFF100', 'ff0000', '333', '0px 0px 0px 15px')}
+                                                                <td width="20"></td>
+                                                                ${tT('FFF100', 'ff0000', '333', '0px 0px 0px 15px')}
+                                                                ${tbT('FFF100')}
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    ${tdH('15') + tdT()}
+                                                </td>
+                                                <td width="15"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>
