@@ -1,0 +1,187 @@
+<script type="text/javascript">
+    (function ($) {
+        function tdI(item) {
+            var temp1 = '';
+            for (var i = 0; i < 3; i++) {
+                temp1 += ` <td height="15"></td>`;
+            }
+            return `<td width="210" style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;vertical-align: top;background:${item == '1' ? 'rgba(255, 93, 4, 0.6)':'#dfdbbf'};border-radius: 5px;">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    ${temp1}
+                                </tr>
+                                <tr>
+                                    <td width="25"></td>
+                                    ${tdH('')}
+                                    <td width="25"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#" style=" display: block; text-decoration: none; text-align: center;padding: 0px 0px 5px 0px;">
+                                            <span style="font-size: 16px;line-height: 16px;display: block;color:#${item == '1'? 'fff':'ff5d04'};padding:5px 0px 0px 0px;margin:0px;font-weight: bold;">
+                                                Xiaomi
+                                                <span style="color:#000;">Redmi 4 Pro</span>
+                                                <br>3G 32G Plata
+                                            </span>
+                                            <span style="font-size:20px;font-weight:bold;color:#${item == '1'? 'fff':'ff5d04'};line-height: 20px;display: block;margin: 5px 0px 5px 0px;">
+                                                <span style="font-size:14px;color: #000;text-decoration: line-through;line-height: 16px;">219.99€</span>
+                                                199.99€</span>
+                                            </span>
+                                            <span style="font-size: 14px; color: #fff; background: #ff5d04; border: 1px solid #dcdcdc; font-weight: lighter;line-height: 35px;text-align: center; padding: 3px 15px;">Comprar &gt;&gt;</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>`
+        }
+        function tdH(item) {
+            var temp1 = '';
+            for (var i = 0; i < 2; i++) {
+                temp1 += `<img src="./images/201608293-${i + 1}.png" alt="" style="width:100%;margin:0px;border:0px;padding:0px;display: block;">`
+            }
+            return ` <td ${item}>
+                        <a href="#" style="display: block;">
+                            ${temp1}
+                        </a>
+                    </td>`
+        }
+        function tdT(item) {
+            return `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td height="${item}"></td>
+                        </tr>
+                    </tbody>
+                </table>`
+        }
+        function t1(item) {
+            return ``
+        }
+        var str1 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td width="20"></td>
+                                ${tdI('1')}
+                                <td width="15"></td>
+                                ${tdI('1')}
+                                <td width="15"></td>
+                                ${tdI('1')}
+                                <td width="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str2 = `<td width="322">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border: 1px solid #f6cb97;">
+                            <tbody>
+                                <tr>
+                                    <td height="10"></td>
+                                    <td height="10"></td>
+                                </tr>
+                                <tr>
+                                    ${tdH('width="150" style="vertical-align: top;"')}
+                                    <td style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;vertical-align: top;">
+                                        <a href="#" style="display: block;text-decoration: none;text-align: left;padding:0px;height: 182px;">
+                                            <span style="font-size: 16px;line-height: 20px;display: block;color:#ff5d04;padding:20px 0px 25px 0px;font-weight: bold;margin:0px;">
+                                                Redmi
+                                                <span style="color:#000">Note 4 Pro</span>
+                                                <br>3GB 64GB Gris
+                                            </span>
+                                            <span style="font-size:15px;color: #000;text-decoration: line-through;display: block;line-height: 18px;">259.99€</span>
+                                            <span style="font-size:30px;font-weight:bold;color:#ff5d04;line-height: 25px;display: block;margin: 0px 0px 15px 0px;">
+                                                229.99€</span>
+                                            <span style="font-size: 14px; color: #fff; background: #ff5d04; border: 1px solid #dcdcdc; font-weight: lighter;line-height: 35px;text-align: center; padding: 3px 15px;">Comprar &gt;&gt;</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="5"></td>
+                                    <td height="5"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>`,
+            str3 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td width="20"></td>
+                                ${str2}
+                                <td width="16"></td>
+                                ${str2}
+                                <td width="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str4 = ``,
+            str5 = ``,
+            str6 = ``;
+        var str10 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:#f2dbd3;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#" style="display: block;height:248px;">
+                                        <img src="./images/2017030151.jpg" style="width:700px;height:248px;margin:0px;border:0px;padding:0px;display: block;"
+                                            alt="móvil mejor para tu padre">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #FEFAE9;vertical-align: top;">
+                                    ${tdT('15') + str3}
+                                    ${tdT('15') + str3}
+                                    ${tdT('15')}
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td width="20"></td>
+                                                ${tdI('')}
+                                                <td width="15"></td>
+                                                ${tdI('')}
+                                                <td width="15"></td>
+                                                ${tdI('')}
+                                                <td width="20"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ${tdT('30') + str3}
+                                    ${tdT('15')}
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td style="background: url(./images/2017030153.png) no-repeat center bottom;">
+                                                    ${str1 + tdT('15') + str1}
+                                                    ${tdT('15')}
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="20"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="50" style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;">
+                                                                    <a href="#" style="display: block;text-decoration: none;text-align:center;padding:0px;font-weight: bold;">
+                                                                        <span style="font-size: 14px; color: #fff; background: #ff5d04; border: 1px solid #dcdcdc; font-weight: lighter;line-height: 35px;text-align: center; padding: 3px 15px;">Ver más &gt;&gt;</span>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="30"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>
