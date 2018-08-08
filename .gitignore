@@ -9,7 +9,6 @@
 # production
 /build
 /src/img
-
 # misc
 .DS_Store
 .env.local
