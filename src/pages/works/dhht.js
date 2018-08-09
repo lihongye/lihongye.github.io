@@ -28,7 +28,6 @@ export default class Dhht extends Component{
         },
         {
           title:"公司magento商城网站",
-          url:"http://www.pandawill.com", 
           content:"用magento的多站点功能, 公司开放了法语/西语/葡语和Pandwill四个电商网站, 后面公司转型做维保业务, 电商网站都关掉了。 主要负责活动页面与页面配套的活动邮件以及首页banner轮播。并确保页面兼容主流浏览器以及邮件兼容各种邮件客户端。商城推广部提出活动主题，参与到活动设计，结合推广提出的前端页面展示效果，用前端语言html、js、css、css3等输出html页面并上传到网站。",
           codeList:[
             {
