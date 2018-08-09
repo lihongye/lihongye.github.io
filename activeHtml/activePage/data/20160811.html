@@ -1,0 +1,116 @@
+<div class="hd-20160811">
+    <a href="#" class="banner-bg"></a>
+    <div class="w970">
+      <div class="controll-area">
+      <ul class="controll-switch">
+        <li class="active" style="background: #d3d4d4;margin-right:50px;">
+          <p class="text-content">Almacén de España</p>
+          <p class="text-notice">Entrega rápida</p>
+        </li>
+        <li style="background:#e2d2b8;">
+          <p class="text-content">Almacén de China</p>
+          <p class="text-notice">Más económico</p>
+        </li>
+      </ul>
+    </div>
+    <div class="hd-block-area">
+      <div class="hd-block-show active">
+        <ul class="lists-20 clearfloat"></ul>
+      </div>
+      <div class="hd-block-show">
+        <ul class="lists-16 clearfloat"></ul>
+      </div>
+    </div>
+    </div>
+    <div class="hd-fixed-ico">
+      <img src="./images/fuchuang.jpg">
+      <a class="hd-link" href="#" target="__blank"></a>
+      <span class="closed"></span>
+    </div>
+    
+  </div>
+
+    <style>
+      .hd-20160811 .banner-bg {display: block;width:100%;background: url(./images/201608111.jpg)no-repeat center;height: 524px;}
+      .controll-area .controll-switch {margin: 45px 0px 35px;text-align:center;}
+      .controll-switch .item-border{background: #ff6709; display: block; position: absolute; transition: all .3s ease; -webkit-transition: all .3s ease; -o-transition: all .3s ease; -ms-transition: all .3s ease; -moz-transition: all .3s ease;}
+      .controll-switch .border-t { height: 3px; width: 0px; left: 0; top: 0;}
+      .controll-switch .border-r { height: 0; width: 3px; right: 0; top: 0;}
+      .controll-switch .border-b {height: 3px; width: 0; right: 0; bottom: 0;}
+      .controll-switch .border-l { height: 0; width: 3px; left: 0; top: 0;}
+      .controll-switch li:hover .border-t,.controll-switch li:hover .border-b,.controll-switch li.active .border-t,.controll-switch li.active .border-b {width:100%;}
+      .controll-switch li:hover .border-r,.controll-switch li:hover .border-l,.controll-switch li.active .border-r,.controll-switch li.active .border-l {height:100%;}
+      .controll-area .controll-switch li {display: inline-block;position: relative;height: 125px;width: 400px;overflow: hidden;}
+     .controll-switch li .text-content{font-size: 20px;color: #222;margin:30px 0px 10px;}
+    .controll-switch li .text-notice{font-size: 14px;color: #fff;background: #ff6709;width: 140px;margin: 0px auto;height: 30px;line-height: 30px;border-radius: 5px;}
+    .hd-block-area .hd-block-show ul li {float: left;margin: 0px 10px 10px 0px;height: 355px;border: 1px solid #c7c7c7;width: 233px;text-align: center;-webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;position: relative;}
+     .hd-block-area .hd-block-show ul li:hover{transform: translateY(-6px); -webkit-transform: translateY(-6px); -o-transform: translateY(-6px); -ms-transform: translateY(-6px); -moz-transform: translateY(-6px);}
+    .hd-block-area .hd-block-show ul li:nth-child(4n+4) {margin-right: 0px;}
+    .hd-block-area .hd-block-show ul li .product-info {font-size: 14px;line-height: 15px;margin-bottom: 5px;color: #666;height: 30px;overflow: hidden;padding: 0px 10px;}
+    .hd-block-show ul li .product-img {width: 100%; display: block; margin-top: 10px;}
+    .price-area .old-price {font-size: 15px;color: rgb(102, 102, 102);text-decoration: line-through;margin-bottom: 0px;line-height: 20px;}
+    .price-area .current-price{font-size: 20px;font-weight: bold;color: rgb(0, 0, 0);margin-bottom: 0px;line-height: 15px;}
+    .btn-area a {display: flex; justify-content: center; align-items: center;}
+    .btn-area .btn-text {background: #FF5B16; color: #fff; padding: 5px 10px; font-size: 15px; margin-top: 17px; margin-left: -2px;}
+    .hd-block-show {display: none;}
+    .hd-block-show.active {display: block;}
+    .hd-fixed-ico {position: fixed;left: 0px;top: 0px;z-index: 999;display:none;}
+    .hd-fixed-ico .hd-link {display: block;width: 100%;height: 308px;position: absolute;top: 0px;}
+    .hd-fixed-ico .closed {display: block;width: 20px;height: 20px;position: absolute;bottom: 4px;right: 5px;z-index: 9999;cursor: pointer;}
+    </style>
+    <script type="text/javascript">
+      (function($){
+        var str2 = `<li>
+            <a href="#"><img class="product-img" src="./images/2016040616.jpg"></a>
+            <p class="product-info">Xiaomi Redmi 3 Pro 3GB 32GB Dorado clásico-idioma español</p>
+            <div class="price-area">
+              <p class="old-price">259,99 €</p>
+              <p class="current-price">259,99 €</p>
+            </div>
+            <div class="btn-area">
+                <a href="#">
+                  <img src="./images/201606134.jpg">
+                  <span class="btn-text">Comprar ahora</span>
+                </a>
+            </div>
+          </li>`;
+
+
+        var str2_16 = '', str2_20 = '';
+        $(".controll-switch li").append(` 
+          <span class="item-border border-t"></span>
+          <span class="item-border border-r"></span>
+          <span class="item-border border-l"></span>
+          <span class="item-border border-b"></span>`);
+
+        for (var i = 0; i < 16; i++) {
+            str2_16 += str2;
+            str2_20 += str2;
+        }
+        $(".lists-16").append(str2_16);
+        for(var i = 0; i < 4; i++){
+          str2_20 += str2;
+        }
+        $(".lists-20").append(str2_20);
+        $(".controll-switch li").hover(function(){
+          var indexNumber = $(this).index();
+          $(this).addClass("active").siblings().removeClass("active");
+          $(".hd-block-area .hd-block-show").removeClass("active").eq(indexNumber).addClass("active");
+        });
+
+        var siderNav = $(".hd-fixed-ico");
+        $(window).on("scroll", function(){
+          var sideNavShow1 = $(".hd-20160811").offset().top,sideNavShow2 = $(".hd-20160811").outerHeight(true)-($(".hd-fixed-ico").outerHeight(true))/2;
+          if($(this).scrollTop()>=sideNavShow1 && $(this).scrollTop() <=sideNavShow2 ){
+            siderNav.fadeIn(400);
+          }else{
+            siderNav.fadeOut(400);
+          }
+        });
+
+        $(".hd-fixed-ico .closed").on("click",function(){
+          $(this).parent().animate({left:-210},400);
+        });
+              
+      })(jQuery);
+    </script>

@@ -1,0 +1,100 @@
+<div class="hd20170407">
+    <div class="LHY-content LHY-w1163">
+       <div class="hd-banenr">
+          <div class="banner-text">
+              Entrar <a href="http://www.geekvida.es">Geekvida.es &gt;&gt;</a>
+          </div>
+        </div>
+
+      <div class="LHY-main-col">
+        <div class="display display1">
+          <ul class="product-list clearfloat"></ul>
+        </div>
+
+       <div class="display display3">
+        <p class="subtitle-container"><span class="subtitle">XIAOMI</span>Almacén de España,entrega en 72 horas</p>
+        <ul class="product-list clearfloat"></ul>
+       </div>
+    
+        <div class="display display3">
+        <p class="subtitle-container"><span class="subtitle">IPHONE</span>Móviles de alta gama</p>
+        <ul class="product-list clearfloat"></ul>
+       </div>
+
+       <div class="display display3">
+        <p class="subtitle-container"><span class="subtitle">Móviles Reformados</span>Se ve nuevo a un precio menor</p>
+        <ul class="product-list clearfloat"></ul>
+       </div>
+
+       <div class="display display3">
+        <p class="subtitle-container"><span class="subtitle">GADGETS</span>Dejar su vida mas conveniente</p>
+         <ul class="product-list clearfloat"></ul>
+       </div>
+
+      </div>
+    </div>
+  </div>
+
+  <style type="text/css">
+    .hd20170407 .hd-banenr{height:505px;position: relative;width: 1103px;margin: 0px auto;overflow: hidden;}
+    .hd-banenr .banner-text{position: absolute; right: 0px; font-size: 14px; width: 195px; text-align: center; background: #fff; padding: 5px; color: #000;border: 1px solid #dedede;}
+    .hd-banenr .banner-text a {color:#a8d89f;font-weight: bold;}
+    .LHY-w1163 {width: 1147px;margin: 0px auto;}
+    .hd20170407 {background: url(./images/201704077.jpg) no-repeat center top;}
+    .LHY-main-col {background:rgba(255, 255, 255, 0.6);padding: 25px;margin-top: 50px;}
+    .product-list li {float: left;margin:0 19px 19px 0;}
+    .product-list li.row-last {margin-right: 0;}
+    .display3 {margin-top: 25px;}
+    .display3 .product-list {margin-left:1px;}
+    .display3 .product-list li { width: 218px;overflow: hidden; border: 1px solid #a0a0a0;margin: -1px 0px 0px -1px;position: relative;}
+    .really-list .LHY-slidedown .click-ico {position: absolute; top: 80px; display: block; left: 46px;}
+    .display3 .discount { width: 60px; font-size: 15px; position: absolute; top: 0px; right: 0; word-wrap: break-word; color: #fff; line-height: 14px; background: #FF000A; text-align: center; height: 55px; border-radius: 40px 0 40px 40px; padding-top: 13px; box-sizing: border-box;}
+    .display3 .discount .big {font-size: 25px;}
+    .display3 .product-list li.border-top {border-top: 1px solid #a0a0a0;}
+    .display3 .product-list li.border-left {border-left: 1px solid #a0a0a0;}
+    .prouct-info .price {text-align: center;}
+    .display3 .prouct-info {padding: 15px 10px 10px 10px;text-align: left;}
+    .display3 .prouct-info .info {height: 40px; line-height: 18px; overflow: hidden; margin-bottom: 5px;}
+    .display3 .subtitle-container {border-bottom: 2px solid #333333; margin-bottom: 5px; text-align: left; font-size: 16px; color: #494a4f;}
+    .subtitle-container .subtitle {font-size: 25px; color: #fff; background: #333333; display: inline-block; text-align: center; margin: 0px; padding: 15px 30px;margin-right: 15px;}
+    .price .pre-price {text-decoration: line-through; font-size: 14px;}
+    .price .cur-price{font-size: 24px; color: #f66202; font-weight: bold;}
+    .display3 .product-img img {width: 100%;}
+    .display3 .buy-layout {position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); text-align: center; padding-top: 90px;display: none;}
+    .display3 .product-list li:hover .buy-layout {display: block;}
+    .LHY-box{width: 185px;height: 185px;position: relative;margin: 18px auto;overflow: hidden;}
+    .list{position: absolute;background: #fff;left:0px;}
+  </style>
+  <script type="text/javascript">
+    (function($){
+        $(function(){
+          var str1 = '', str2 = '', str3 = '';
+          for(var i = 0; i < 15; i++){
+            str1 += `<li>
+                      <div class="product-img">
+                        <img src="./images/2016040616.jpg" >
+                      </div>
+                      <div class="prouct-info">
+                        <p class="info">Gratis JJRC H9D FPV 6 Achsen RC Quadcopter</p>
+                        <p class="price"><span class="pre-price">89.99€</span>&nbsp;<span class="cur-price">62.99€</span></p>
+                      </div>
+                      <p class="discount"><span class="big">30</span>%<br>OFF</p>
+                      <div class="buy-layout">
+                        <a href="#"><img src="./images/hd-product-up.png" alt="Comprar ahora"></a>
+                      </div>
+                  </li>`;
+          }
+          for(var i = 0; i < 6; i++){
+            if((i +1)%3 == 0){
+              str3 = `class="row-last"`;
+            }else{
+              str3 = '';
+            }
+            str2 += `<li ${str3}><a href="#"><img src="./images/hd-product-6.jpg" alt="Xiaomi Redmi 4A 2GB 16GB Oro rosa"></a></li>`;
+          }
+          $(".display1 .product-list").prepend(str2);
+          $(".display3 .product-list").prepend(str1);
+  
+        });
+    })(jQuery); 
+  </script>

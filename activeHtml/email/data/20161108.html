@@ -1,0 +1,134 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(item) {
+            return `<tr>
+                        <td style=" vertical-align:bottom;">
+                            <a href="#">
+                                <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/${item}"
+                                    alt="geekvida.de - Smartphones - Tablet PCs - Zubehör und vieles mehr">
+                            </a>
+                        </td>
+                    </tr>`
+        }
+        function changeStr2(item) {
+            return `<td style="text-align:center;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;">
+                        <a href="#" style="display: block;color:#fff;text-decoration: none;">
+                            ${item}
+                            <p style="font-size:15px;line-height: 15px;margin: 10px 0 0 0;">All-in-one Dual USB Charger
+                                <br>USA Standard White</p>
+                            <p style="margin: 5px 0 10px 0;">
+                                <span style="text-decoration: line-through;font-size:15px;">$8.99</span>
+                                <span style="font-size:25px;font-weight: bold;">$5.99</span>
+                            </p>
+                            <span style="font-size:15px;">Buy now &gt;&gt;</span>
+                        </a>
+                    </td>`
+        }
+        function changeStr3(item) {
+            return `<td style="vertical-align: top;">
+                    <a href="#" style=" display: block;">
+                        <img src="./images/${item}.png" style="width:338px;height:347px;margin:0px auto;border:0px;padding:0px;display: block;"
+                            alt="XIAOMI Redmi Note 3 Pro 3GB 32GB">
+                    </a>
+                </td>`
+        }
+        function changeStr4(item) {
+            return `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td height="83" style="vertical-align: top;background: url(./images/2016110916.png);text-align:center;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;">
+                                    <a href="#" style=" display: block; width: 100%; text-align: center; font-size: 25px; color: #fff100; text-decoration: none; line-height: 60px;">${item}</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`
+        }
+       var str1 = changeStr2('<img src="./images/2016110917.png" alt="ERI Fitness Activity Tracker Bracelet Pedometer Sleep Monitor" style="width:312px;margin:0px auto;border:0px;padding:0px;display: block;">'),
+           str2 = changeStr2('<img src="./images/201606032.jpg" alt="ERI Fitness Activity Tracker Bracelet Pedometer Sleep Monitor" style="width:210px;margin:0px;border: 1px solid #FE4303;padding:0px;display: block;">'),
+           str3 = ` <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td height="25"></td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str4 = ` <tr>
+                        <td width="20"></td>
+                        ${str1}
+                        <td width="20"></td>
+                        ${str1}
+                        <td width="20"></td>
+                    </tr>`;
+        var str10 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:#7b0cad;">
+                    <tbody>${changeStr1('201611093.jpg')}<tr>
+                    <td style="vertical-align: top;background: url(./images/201611091.jpg) repeat-y center top;">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                ${changeStr1('201611091.png')}
+                            </tbody>
+                        </table>
+                        ${str3 + changeStr4('Xiaomi')}
+                        
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    ${changeStr3('201611094') + changeStr3('201611096')}
+                                </tr>
+                                <tr>
+                                    ${changeStr3('201611097') + changeStr3('201611099')}
+                                </tr>
+                            </tbody>
+                        </table>
+                        ${str3 + changeStr4('GADGETS')}
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                ${str4}
+                                <tr>
+                                    <td width="20" height="10"></td>
+                                    <td height="10"></td>
+                                    <td width="20" height="10"></td>
+                                    <td height="10"></td>
+                                    <td width="20" height="10"></td>
+                                </tr>
+                                ${str4}
+                            </tbody>
+                        </table>
+                        ${str3 + changeStr4('Refurbished Mobile')}
+                       
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    <td width="18"></td>
+                                   ${str2}
+                                    </td>
+                                    <td width="17"></td>
+                                    ${str2}
+                                    <td width="17"></td>
+                                    ${str2}
+                                    <td width="18"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                                <tr>
+                                    <td height="30"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;">
+                                        <a href="#" style="display: block; text-align: center; font-size: 20px; color: #65006c; text-decoration: none; line-height: 35px; background: #fff100; border: 1px solid #fe4100; width: 200px; margin: 0px auto;">View More&gt;&gt;</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="30"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

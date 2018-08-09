@@ -1,0 +1,57 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(widthStr, item) {
+            return `  <td ${widthStr} style="vertical-align:bottom;">
+                        <a href="#">
+                            <img width="100%" style="width:100%;height: 100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/${item}"
+                                alt="Original Xiaomi Mi Band Wristband IP67 Bluetooth Bracelet with English Package">
+                        </a>
+                    </td>`
+        }
+        function changeStr2(item) {
+            return ` <tr>
+                    <td style=" vertical-align:bottom;">
+                            <a href="#">
+                            <img width="100%" style="width:100%;height: 100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/${item}.jpg"
+                                alt="XIAOMI Redmi Note 3 3GB 32GB">
+                        </a>
+                    </td>
+                </tr>`
+        }
+        var str1 = `<table width="100%" bgcolor="#1393d7" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tbody>`,
+            str2 = `</tbody></table>`,
+            str3 = `<td width="10"></td>`,
+            str4 = '', str5 = '<td height="10"></td>', str6 = '', str7 = '';
+        for (var i = 0; i < 3; i++) {
+            str4 += str3 + changeStr1('width="220"', '201604203.png');
+            str6 += str5 + str5;
+            str7 += str5;
+        }
+        var str10 = `${str1 + changeStr2('201604201') + changeStr2('201604202') + str2 + str1}
+                    <tr>${str4 + str3}
+                    </tr> <tr>${str6}
+                    </tr> <tr>${str4 + str3}
+                    </tr> ${str2 + str1}
+                    <tr><td height="15"></td></tr> ${changeStr2("201604202") + str2 + str1}
+                    <tr> <td width="10"></td> ${changeStr1('', '2016042010.jpg')}
+                    <td width="10"></td> </tr> <tr>${str7}
+                    </tr> <tr> <td width="10"></td> ${changeStr1('', '2016042011.jpg')}
+                    <td width="10"></td> </tr> <tr>${str7}
+                    </tr> ${str2 + str1}
+                    <tr>${str4 + str3}
+                    </tr> <tr>${str6}
+                    </tr> <tr>${str4 + str3}
+                    </tr> <tr>${str6}
+                    </tr> <tr>${str4 + str3}
+                    </tr> ${str2 + str1}
+                    <tr><td height="15"></td></tr> <tr>${changeStr2("201604202")}
+                    </tr> ${str2 + str1}
+                    <tr>${str4 + str3}
+                    </tr> <tr>${str6}
+                    </tr> <tr> ${str4 + str3}
+                    </tr> <tr> ${str6}
+                    </tr>${str2}`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

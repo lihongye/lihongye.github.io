@@ -1,0 +1,239 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(item) {
+            return `${changeStr2('')}
+                        <tr>
+                            <td height="${item}"></td>
+                        </tr>
+                    </tbody>
+                </table>`
+        }
+        function changeStr2(item) {
+            return `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" ${item}><tbody>`
+        }
+        function changeStr3(w2,h1) {
+            return `<a href="#" style="display: block;">
+                        <img src="./images/201612201.png" style="width:${w2}px;max-height:${h1}px;margin:0px;border:0px;padding:0px;display: block;"
+                            alt="super phone on sale refurbised phone 90 50">
+                    </a>`
+        }
+       var str1 = ` <td width="207">
+                        <a href="#"
+                            style="display: block;">
+                            <img src="./images/201606032.jpg" style="width:200px;height:177px;margin:0px auto;border:0px;padding:0px;display: block;"
+                                alt="Elephone P6i Black+Silver">
+                        </a>
+                        <a href="#"
+                            style="display: block;text-decoration: none;text-align: center;padding:10px 0px 0px 0px;font-weight:bold;">
+                            <span style="font-size:15px;color:#500047;line-height: 15px;display: block;">Elephone P6i
+                                <br>Black+Silver</span>
+                            <span style="font-size:16px;color:#500047;line-height: 22px;display: block;padding: 5px 0px 0px 0px;">
+                                <span style="text-decoration: line-through;">$42.99</span>
+                                <br>
+                                <span style="font-size:32px;color:#f40319;">$34.99</span>
+                            </span>
+                        </a>
+                    </td>`,
+           str2 = `${changeStr2('')}
+                        <tr>
+                            <td width="30"></td>
+                            ${str1}
+                            <td width="9"></td>
+                            ${str1}
+                            <td width="10"></td>
+                            ${str1}
+                            <td width="30"></td>
+                        </tr>
+                    </tbody>
+                </table>`;
+        var str10 = `${changeStr2('style="background:#3b0045;"')}
+                            <tr>
+                                <td>
+                                    <a href="#" style="display: block;">
+                                        <img src="./images/201612201.jpg" style="width:700px;height:393px;margin:0px;border:0px;padding:0px;display: block;"
+                                            alt="super phone on sale refurbised phone 90 50">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="885" style="background: url(./images/201612202.jpg) no-repeat;vertical-align: top;">
+                                    ${changeStr1('30') + changeStr2('')}
+                                            <tr>
+                                                <td width="590">${changeStr3('590','40')}</td>
+                                                <td width="110" style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;vertical-align: top;">
+                                                    <a href="#" style="display: block;font-size:14px;color:#6b2503;text-decoration: none;font-weight: bold; height: 23px; line-height: 18px;text-align:left;padding:0px 0px 0px 5px;">More &gt;&gt;</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ${changeStr1('40') +  changeStr2('')}
+                                            <tr>
+                                                <td width="30"></td>
+                                                <td width="260">${changeStr3('260','180')}
+                                                    <a href="#"
+                                                        style="display: block;font-size:17px;color:#fff;text-decoration: none;text-align:center;line-height: 25px; height: 85px;">
+                                                        <span style="line-height: 18px; display: block;">Cubot S550 2GB 16GB
+                                                            <br>Touch ID Black</span>
+                                                        <span style="text-decoration: line-through;display: block;font-size:16px;width: 225px;">$140.99</span>
+                                                        <span style="font-size:34px;font-weight:bold;color:#fff100;display: block;width: 225px;">$79.99</span>
+                                                    </a>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td width="370">
+                                                    <a href="#"
+                                                        style="display: block;font-size:16px;color:#fff;text-decoration: none;text-align:center; line-height: 25px; font-weight: bold;">
+                                                        <span style="display: block; padding: 35px 0px 0px 0px; width: 240px;">UMI IRON 3GB 16GB Silver</span>
+                                                        <span style="text-decoration: line-through; display: block; font-size: 16px; width: 180px; padding: 45px 0px 0px 0px;">$179.99</span>
+                                                        <span style="font-size:36px;color:#fff100;display: block;width: 180px;">$129.99</span>
+                                                    </a>
+                                                    ${changeStr3('370','110')}
+                                                </td>
+                                                <td width="30"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                     ${changeStr1('10') +  changeStr2('')}
+                                            <tr>
+                                                <td width="30"></td>
+                                                <td width="325">
+                                                    <a href="#"
+                                                        style="display: block;font-size:18px;color:#5c320a;text-decoration: none;text-align:left;height: 150px;font-weight: bold;padding: 20px 0px 0px 20px;">
+                                                        <span style="line-height: 22px;display: block;margin:0px 0px 10px 0px">Redmi 2 Pro 4G 2GB 16GB Black</span>
+                                                        <span style="text-decoration: line-through;display: block;font-size:16px;line-height: 25px;">$149.99</span>
+                                                        <span style="font-size:34px;font-weight:bold;color:#d9151e;display: block;line-height: 25px;">$109.99</span>
+                                                    </a>
+                                                    ${changeStr3('325','88')}
+                                                </td>
+                                                <td width="20"></td>
+                                                <td width="295">
+                                                    ${changeStr3('295','180')}
+                                                    <a href="#" style="display: block;text-decoration: none;text-align:center;height:80px;">
+                                                        <span style="color: #fff; display: block; margin: 0px 0px 5px 7px; line-height: 20px; font-size: 17px;">Xiaomi Wristband IP67 Bluetooth Bracelet </span>
+                                                        <span style="line-height: 25px;font-weight: bold;display: block; width: 270px;">
+                                                            <span style="font-size:16px;color:#fff;text-decoration: line-through;">$21.79</span>
+                                                            <span style="font-size: 30px; color: #fff100;">$17.99</span>
+                                                        </span>
+                                                    </a>
+
+                                                </td>
+                                                <td width="30"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ${changeStr2('')}
+                                            <tr>
+                                                <td width="30"></td>
+                                                <td width="305">
+                                                    ${changeStr3('305','240')}
+                                                </td>
+                                                <td width="335">
+                                                    <a href="#"
+                                                        style="display: block;text-decoration: none;text-align:left;">
+                                                        <span style="color: #fff; display: block; margin: 0px 0px 0px 0px; line-height: 20px; font-size: 18px;">ELE CAM Explorer 4K Camera
+                                                            <br>16MP Blue</span>
+                                                        <span style="text-decoration: line-through; display: block; font-size: 16px;color:#fff;padding: 25px 0px 0px 0px;line-height: 25px; ">$85.99</span>
+                                                        <span style="font-size:36px;color:#fff100;display: block;line-height: 25px;font-weight: bold;">$59.99</span>
+                                                    </a>
+
+                                                </td>
+                                                <td width="30"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="684" style="background: url(./images/201612203.jpg) no-repeat;vertical-align: top;">
+                                    ${changeStr1('65') + changeStr2('')}
+                                   
+                                            <tr>
+                                                <td width="590">
+                                                    ${changeStr3('590','40')}
+                                                </td>
+                                                <td width="110" style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;vertical-align: top;">
+                                                    <a href="#" style="display: block; font-size: 14px; color: #6b2503; text-decoration: none; font-weight: bold; height: 23px; line-height: 15px; text-align: left; padding: 0px 0px 0px 5px;">More &gt;&gt;</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ${changeStr1('55') + changeStr2('')}
+                                            <tr>
+                                                <td width="30"></td>
+                                                <td width="200">
+                                                    ${changeStr3('120','45')}
+                                                    <a href="#"
+                                                        style="display: block;text-decoration: none;text-align:left;padding:0px 0px 0px 10px;">
+                                                        <span style="color: #fff; display: block; margin: 0px 0px 0px 0px; line-height: 20px; font-size: 18px;">XIAOMI Redmi 2 Pro
+                                                            <br>2GB 16GB White</span>
+                                                        <span style="text-decoration: line-through; display: block; font-size: 16px;color:#fff;padding: 40px 0px 0px 0px;line-height: 25px; ">$105.99</span>
+                                                        <span style="font-size:36px;color:#fff100;display: block;line-height: 25px;font-weight: bold;">$69.99</span>
+                                                    </a>
+                                                    ${changeStr3('120','40')}
+                                                </td>
+                                                <td width="120">
+                                                    ${changeStr3('120','235')}
+                                                </td>
+                                                <td width="15"></td>
+                                                <td width="175">
+                                                    ${changeStr3('175','235')}
+                                                </td>
+                                                <td width="130">
+                                                    ${changeStr3('130','40')}
+                                                    <a href="#"
+                                                        style="display: block;text-decoration: none;text-align:left;">
+                                                        <span style="color: #fff; display: block; margin: 0px 0px 0px 0px; line-height: 20px; font-size: 16px;">UMI HAMMER
+                                                            <br>2GB 16GB White</span>
+                                                        <span style="text-decoration: line-through; display: block; font-size: 16px;color:#fff;padding: 105px 0px 0px 0px;line-height: 25px;text-align:center; ">$139.99</span>
+                                                        <span style="font-size:36px;color:#fff100;display: block;line-height: 25px;font-weight: bold;text-align:center;">$89.99</span>
+                                                    </a>
+                                                </td>
+                                                <td width="30"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ${changeStr1('15') + changeStr2('')}
+                                            <tr>
+                                                <td width="30"></td>
+                                                <td width="105">
+                                                    ${changeStr3('105','255')}
+                                                </td>
+                                                <td width="165">
+                                                    ${changeStr3('165','40')}
+                                                    <a href="#" style="display: block;text-decoration: none;text-align:left;padding:0px 0px 0px 10px;">
+                                                        <span style="color: #fff; display: block; margin: 0px 0px 0px 0px; line-height: 20px; font-size: 16px;">UMI Rome 4G
+                                                            <br>3GB 16GB Golden</span>
+                                                        <span style="text-decoration: line-through; display: block; font-size: 16px;color:#fff;padding: 40px 0px 0px 0px;line-height: 25px; ">$115.99</span>
+                                                        <span style="font-size:36px;color:#fff100;display: block;line-height: 25px;font-weight: bold;">$79.99</span>
+                                                    </a>
+                                                    ${changeStr3('165','40')}
+                                                </td>
+                                                <td width="20"></td>
+                                                <td width="160">
+                                                    ${changeStr3('130','40')}
+                                                    <a href="#"
+                                                        style="display: block;text-decoration: none;text-align:left;font-weight: bold;">
+                                                        <span style="color: #2c0042; display: block; margin: 0px 0px 0px 0px; line-height: 20px; font-size: 16px;">ECOO E04 Plus
+                                                            <br>3GB Black</span>
+                                                        <span style="text-decoration: line-through; display: block; font-size: 16px;color:#2c0042;padding: 45px 0px 0px 0px;line-height: 25px;">$134.99</span>
+                                                        <span style="font-size:40px;color:#f40319;display: block;line-height: 25px;">$93.99</span>
+                                                    </a>
+                                                </td>
+                                                <td width="190">
+                                                    ${changeStr3('190','255')}
+                                                </td>
+                                                <td width="30"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="718" style="background: url(./images/201612204.jpg) no-repeat;vertical-align: top;">
+                                    ${changeStr1('10') + str2 + changeStr1('30') + str2 + changeStr1('134')}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

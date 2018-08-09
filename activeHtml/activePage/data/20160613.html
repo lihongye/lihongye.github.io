@@ -1,0 +1,72 @@
+<div class="hd-20160613 w1050">
+        <a href="#" style="display: block;"><img class="product-img" src="./images/201606131.jpg" style="display: block;"></a>
+        <div class="controll-area">
+          <ul class="controll-switch clearfloat">
+            <li class="active">
+              <img src="./images/201606132.jpg">
+              <p class="text-notice">Entrega rápida</p>
+              <p class="text-content">Almacén en España</p>
+            </li>
+            <li>
+              <img src="./images/201606133.jpg">
+              <p class="text-notice">Más económico</p>
+              <p class="text-content" style="left:96px;">Almacén en China </p>
+            </li>
+          </ul>
+        </div>
+        <div class="hd-block-area">
+          <div class="hd-block-show active">
+            <ul class="lists-12 clearfloat"></ul>
+          </div>
+          <div class="hd-block-show">
+            <ul class="lists-6 clearfloat"></ul>
+          </div>
+        </div>
+      </div>
+  
+        <style>
+        .controll-area .controll-switch li {float: left;position: relative;height: 99px;width: 525px;overflow: hidden;}
+        .controll-switch li.active img {opacity: 0.6;}
+        .controll-switch li p {position: absolute;}
+        .controll-switch li img {display: block;}
+        .controll-switch li .text-content{font-size: 30px;color: #FF5B16;bottom: 23px;left: 80px;margin-bottom: 0px;}
+        .controll-switch li .text-notice{font-size: 18px;color: #FF5B16;background: #fff;border: 1px solid rgb(27, 160, 155);border-radius: 5px;padding: 2px 10px;top: 20px;right: 35px;}
+        .hd-block-area .hd-block-show ul li {float: left;margin: 0px 10px 10px 0px;height: 355px;border: 1px solid #c7c7c7;width: 233px;padding: 0px 10px;text-align: center;}
+        .hd-block-area .hd-block-show ul li:nth-child(4n+4) {margin-right: 0px;}
+        .hd-block-area .hd-block-show ul li .product-info {font-size: 14px;line-height: 15px;margin-bottom: 5px;color: #666;height: 30px;overflow: hidden;}
+        .hd-block-show ul li .product-img {width: 228px; height: 200px; margin-top: 10px;}
+        .price-area .old-price {font-size: 15px;color: rgb(102, 102, 102);text-decoration: line-through;margin-bottom: 0px;line-height: 20px;}
+        .price-area .current-price{font-size: 20px;font-weight: bold;color: rgb(0, 0, 0);margin-bottom: 0px;line-height: 15px;}
+        .btn-area a { display: flex; justify-content: center; align-items: center;}
+        .btn-area .btn-text { background: #FF5B16; color: #fff; padding: 5px 10px; font-size: 15px; margin-top: 17px; margin-left: -2px;}
+        .hd-block-show {display: none;}
+        .hd-block-show.active {display: block;margin-top:15px;}
+        </style>
+        <script type="text/javascript">
+          (function($){
+            var str1 = '', str2 = ` <li>
+                <a href="#"><img class="product-img" src="./images/2016040616.jpg"></a>
+                <p class="product-info">Xiaomi Redmi 3 Pro 3GB 32GB Dorado clásico-idioma español</p>
+                <div class="price-area">
+                  <p class="old-price">259,99 €</p>
+                  <p class="current-price">259,99 €</p>
+                </div>
+                <div class="btn-area">
+                    <a href="#">
+                      <img src="./images/201606134.jpg">
+                      <span class="btn-text">Comprar ahora</span>
+                    </a>
+                </div>
+              </li>`;
+            for (var i = 0; i < 6; i++) {
+                str1 += str2;
+            }
+            $(".lists-6").append(str1);
+            $(".lists-12").append(str1 +  str1);
+            $(".controll-switch li").hover(function(){
+              var indexNumber = $(this).index();
+              $(this).addClass("active").siblings().removeClass("active");
+              $(".hd-block-area .hd-block-show").removeClass("active").eq(indexNumber).addClass("active");
+            });
+          })(jQuery);
+        </script>

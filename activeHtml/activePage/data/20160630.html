@@ -1,0 +1,88 @@
+<div class="hd-20160630">
+  <div class="hd-top-area">
+    <div class="top-baaner">
+      <a href="#" class="banner"></a>
+    </div>
+  </div>
+  
+  <div class="hd-product-list w1000">
+    <div class="display">
+      <div class="title">
+        <h2 class="hd-subtitle">Móviles</h2>
+      </div>
+      <div class="hd-product-list">
+        <ul class="display-list1 lists-20 clearfloat">
+        </ul>
+      </div>
+    </div>
+
+    <div class="display">
+      <div class="title">
+        <h2 class="hd-subtitle">Gadgets y accesorios</h2>
+      </div>
+      <div class="hd-product-list">
+        <ul class="display-list1 lists-20 clearfloat">
+        </ul>
+      </div>
+    </div>
+
+    <div class="display">
+      <div class="title">
+        <h2 class="hd-subtitle">MÓVILES REFORMADOS</h2>
+      </div>
+      <div class="hd-product-list">
+        <ul class="display-list1 lists-20 clearfloat">
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<style>
+.hd-20160630{background: url(./images/201606307.jpg)no-repeat bottom fixed;;}
+.top-baaner .banner{background: url(./images/201606301.jpg)no-repeat center;display: block;width: 100%;height:446px;}
+.hd-product-list .top-text{font-size: 20px;color: #333;padding: 55px 55px 30px 55px;margin: 0px;}
+.display .hd-subtitle{font-size: 36px;background: #ba0042;padding: 10px 0;color: #fff;text-align: center;}
+.hd-product-list .display{text-align: center;margin-top:30px;}
+.hd-product-list .display .img-btn-buy {position: absolute;font-size:18px;color:#fffc03;background:#ba0042;padding:5px 15px 8px;}
+.hd-product-list{margin-top:20px;}
+.display-list1 {margin-top:15px;}
+.display-list1 li{width: 242px;height: 325px;overflow: hidden;float: left;text-align: center;margin:0 10px 10px 0;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-ms-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;position: relative;background: #fff;}
+.product-info .hd-discount{background: #ba0042;font-size: 23px;color: #fff;width: 60px;height: 60px;border-radius: 50%;position: absolute;top: 0;right: 0;margin: 0px;line-height: 60px;}
+.display-list1 li:hover{border-color:#DCD2D2;transform: translateY(-6px);-webkit-transform: translateY(-6px);-o-transform: translateY(-6px);-ms-transform: translateY(-6px);-moz-transform: translateY(-6px);box-shadow: 0px 0px 16px #5D5353;-webkit-box-shadow: 0px 0px 16px #5D5353;-o-box-shadow: 0px 0px 16px #5D5353;-ms-box-shadow: 0px 0px 16px #5D5353;-moz-box-shadow: 0px 0px 16px #5D5353;}
+.btn-action a.btn-buy{display: block;font-size: 16px;color: #ba0042;position: absolute;bottom: 10px;right: 5px;padding:0 5px 3px;}
+.display-list1 li:hover .btn-action a.btn-buy,.hd-product-list .display-list1 li:hover .img-btn-buy{color:#fff;background:#fd4694;}
+.hd-product-list{padding-bottom: 30px;}
+.hd-product-list .product-info{padding: 0px 5px;color:#333;}
+.display-list1 li:nth-child(4n+4){margin-right: 0px;}
+.display-list1 .info{font-size: 15px; color: #333; line-height: 18px; margin: 5px 0 10px; padding: 0 10px; overflow: hidden; height: 38px;}
+.display-list1 .old-price{font-size: 14px;text-decoration: line-through;text-align: left;margin: 0px;position: absolute;bottom: 10px;left: 5px;color:#333;}
+.display-list1 .new-price{font-size: 21px;font-weight: bold;text-align: left;margin: 0px;position: absolute;bottom: 25px;left: 5px;color:#ba0042;}
+.display-list1 .product-img{ width: 100%; margin-top: 10px; display: block;}
+</style>
+
+<script type="text/javascript">
+  (function($){
+       
+   var str1 = `<li>
+            <a href="#"><img class="product-img" src="./images/2016040616.jpg" alt="Chuwi iLife V7s Robot de limpieza y aspirador inteligente Rosado"></a>
+            <p class="info">Chuwi iLife V7s Robot de limpieza y aspirador inteligente Rosado</p>
+            <div class="product-info">
+              <div class="price-area">
+                <p class="new-price">194.99€</p>
+                <p class="old-price">209.99€</p>
+              </div>
+              <div class="btn-action">
+                <a class="btn-buy" href="#">Comprar &nbsp;&gt;&gt;</a>
+              </div>
+             <p class="hd-discount">-66€</p>
+            </div>
+          </li>`;
+    var str1_20 = '';
+    for (var i = 0; i < 20; i++) {
+      str1_20 += str1;
+    } 
+    $(".lists-20").append(str1_20);
+
+  })(jQuery);
+</script>

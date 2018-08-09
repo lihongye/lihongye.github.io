@@ -1,0 +1,110 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(item) {
+            return `<td style=" vertical-align:bottom;">
+                        <a href="#">
+                            <img width="100%" style="border:0; margin:0; display:block; padding:0; overflow:hidden;height: 100%;" src="./images/${item}"
+                                alt="Lenovo K80M(P90) 4GB 64GB Negro">
+                        </a>
+                    </td>`
+        }
+        var str1 = `<td width="223" style="vertical-align:bottom;border:1px solid #ddd;padding:10px;text-align: center;">
+                        <a href="#" style="text-decoration: none;">
+                            <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201606032.jpg"
+                                alt="Lenovo K80M(P90) 4GB 64GB 4000mAh Blanco">
+                            <span style="text-align: left;font-size:15px;color:#333;">Lenovo K80M(P90) 4GB 64GB 4000mAh Blanco</span>
+                        </a>
+                        <p style="margin:10px 0px;">
+                            <span style="color:#333;text-decoration: line-through;font-size:15px;">219.99€</span>
+                            <span style="color:#F66202;font-size:22px;font-weight: bold;">189.99€</span>
+                        </p>
+                        <p style="margin: 0px; height: 30px; line-height: 30px;">
+                            <a href="#" style="font-size: 15px; color: #fff; background: #F66202; padding: 5px 10px; text-decoration: none; font-weight: bold;">Comprar ahora</a>
+                        </p>
+                    </td>`,
+            str2 = `<tr>
+                        <td style=" vertical-align:bottom;">
+                            <a href="#">
+                                <img style="border:0; margin:0 auto; display:block; padding:0; overflow:hidden;" src="./images/LHY-hd-20160326-9.jpg" alt="Ver más">
+                            </a>
+                        </td>
+                    </tr>`,
+            str4 = ``;
+        for (var i = 0; i < 5; i++) {
+            str4 += `<td height="15"></td>`
+        }
+        var str10 = `<table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                ${changeStr1('LHY-hd-20160326-1.jpg')}
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                ${changeStr1('LHY-hd-20160326-2.jpg')}
+                                ${changeStr1('LHY-hd-20160326-3.jpg')}
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                ${changeStr1('LHY-hd-20160326-8.jpg')}
+                            </tr>
+                            ${str2}
+                            <tr>
+                                <td height="30"></td>
+                            </tr>
+                            <tr>
+                                <td style=" vertical-align:bottom;border-bottom:3px solid #333;">
+                                    <table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td style=" background: #333; color: #fff; height: 30px; font-size: 15px; padding: 3px 0 0 15px;">OTRAS MARCAS CHINAS CON MAYOR DESCUENTO</td>
+                                                <td width="40%"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                ${str1}
+                                <td width="15"></td>
+                                ${str1}
+                                <td width="16"></td>
+                                ${str1}
+                            </tr>
+                            <tr>
+                               ${str4}
+                            </tr>
+                            <tr>
+                                ${str1}
+                                <td width="15"></td>
+                                ${str1}
+                                <td width="16"></td>
+                                ${str1}
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr><td height="20"></td></tr>
+                            ${str2}
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

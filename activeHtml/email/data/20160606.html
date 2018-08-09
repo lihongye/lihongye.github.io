@@ -1,0 +1,180 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(item) {
+            return `<td width="220" style="vertical-align:bottom;">
+                        <a href="#">
+                            <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="../img/${item}.jpg"
+                                alt=" IP65 128M/64M Zeblaze Crystal Smart Watch">
+                        </a>
+                    </td>`
+        }
+        function changeStr2(item) {
+            return ` <tr>
+                        <td style="vertical-align:bottom;">
+                            <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/${item}.jpg"
+                                alt="MÓVILES Y TABLETAS Technical life is always the trend">
+                        </td>
+                    </tr>`
+        }
+        function changeStr3(item) {
+            return `<table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center" ${item}><tbody>`
+        }
+        var str7 = `<tr><td height="10"></td></tr>`,
+            str8 = ` <tr>
+                        <td style="vertical-align:bottom; font-family: 'Microsoft Yahei',sans-serif;text-align: center;">
+                            <a href="#" style="text-decoration:none;color:#333;line-height: 18px;font-size:15px;">XIAOMI Redmi Note 3 3GB 32GB 4000mAh White</a>
+                        </td>
+                    </tr>`,
+            str9 = ` <tr>
+                        <td>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="50%" style="vertical-align:bottom;font-family: 'Microsoft Yahei',sans-serif;text-align:center;">
+                                            <a href="#" style="text-decoration:none;color:#ff0101;line-height: 22px;font-size:22px;font-weight:bold;">$239.99</a>
+                                        </td>
+                                        <td width="50%" style="vertical-align:bottom;font-family: 'Microsoft Yahei',sans-serif;text-align:center;background: #ff0101;">
+                                            <a href="#" style="text-decoration:none;color:#fff;line-height: 22px;font-size:15px;;">Buy now &gt;&gt;</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>`,
+            str2 = `</tbody></table>`,
+            str1 = `<td width="210" style="vertical-align:bottom;">
+                        <table width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #ddd;">
+                            <tbody>
+                            ${str7 + changeStr2('201606032') + str7 + str8 + str7 + str9 + str2}
+                    </td>`,
+             
+            str3 = `<td width="10"></td>`,
+            str4 = '', str5 = '<td height="10"></td>', str6 = '', str12 = '',
+            str11 = `<tr>
+                        <td style="vertical-align:bottom;background: #fff;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                    ${changeStr2('201606032') + str8 + str7 + str9}
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>`,
+            str13 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td width="18"></td>
+                                <td width="210" style="vertical-align:bottom;">
+                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td height="1"></td>
+                                            </tr>
+                                            ${str11}
+                                            <tr>
+                                                <td height="249"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td width="17"></td>
+                                <td width="210" style="vertical-align:bottom;">
+                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td height="60"></td>
+                                            </tr>
+                                            ${str11}
+                                            <tr>
+                                                <td height="190"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td width="17"></td>
+                                <td width="210" style="vertical-align:bottom;">
+                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td height="119"></td>
+                                            </tr>
+                                            ${str11}
+                                            <tr>
+                                                <td height="131">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="21"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="50" style="text-align:right;">
+                                                                    <a href="#" style=" text-decoration: none; color: #ff0101; line-height: 22px; font-size: 15px; background: #fff; padding: 5px 10px; border-radius: 5px;">View more &gt;&gt;</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="60"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td width="18"></td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+        str14 = `${str7 + str2 + changeStr3('')}       
+                <tr>
+                    <td width="18"></td>
+                    ${str1}
+                    <td width="17"></td>
+                    ${str1}
+                    <td width="17"></td>
+                    ${str1}
+                    <td width="18"></td>
+                </tr>
+                ${str2 + changeStr3('')}
+                <tr><td height="30"></td></tr>
+                <tr>
+                    <td height="31" style=" vertical-align:middle;line-height: 31px;;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;color:#e9011b;">
+                        <a href="#" style="font-size: 16px; background: #fe0000; color: #fff; padding: 5px 10px; text-decoration: none;">View more >></a>
+                    </td>
+                </tr>
+                ${str7}`;
+        
+        for (var i = 0; i < 3; i++) {
+            str4 += str3 + changeStr1('20160602'+(i+2));
+            str6 += str5 + str5;
+            str12 += str5;
+        }
+        var str10 = `${changeStr3('') + changeStr2('201606031') + str7 + str2 + changeStr3('style="background:url(./images/201606033.jpg) no-repeat bottom left"')}
+                    <tr>${str4 + str3}</tr>
+                    <tr>${str6 + str5}</tr>
+                    <tr>
+                        <td width="10"></td>
+                        <td width="220" style="vertical-align:bottom;"></td>
+                        ${str3 + changeStr1('201606025') + str3 + changeStr1('201606026') + str3}
+                    </tr>
+                    ${str2 + changeStr3('') + changeStr2('201606034') + str14 + changeStr2('2016060351') + str2}  
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background: url(./images/2016060352.jpg) no-repeat center top;background-color:#f6911b;">
+                        <tbody>
+                            <tr>
+                                <td style="background: url(./images/201606036.jpg) no-repeat center bottom;">
+                                    ${str13}
+                                </td>
+                            </tr>
+                            ${str2 + changeStr3('') + changeStr2('201606037') + str14 + changeStr2('201606038') + str2}  
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background: url(./images/201606039.jpg) no-repeat center top;background-color:#f16623;">
+                        <tbody>
+                            <tr>
+                                <td style="background: url(./images/2016060310.jpg) no-repeat center bottom;">
+                                    ${str13}
+                                </td>   
+                            </tr>
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

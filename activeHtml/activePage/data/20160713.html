@@ -1,0 +1,60 @@
+<div class="hd-20160601">
+    <div class="hd-banner-bg">
+        <div class="hd-banenr"></div>
+    </div>
+    <div class="hd-main-content">
+        <div class="hd-display-block" id="display1">
+            <div class="display w1050">
+                <div class="hd-product-list">
+                    <ul class="lis1 lists-35 clearfloat"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .hd-banner-bg{background: url(./images/201607131.jpg)no-repeat center top;}
+    .hd-main-content{background: url(./images/201607135.jpg)repeat-y center top;padding-top: 40px;}
+    .hd-20160601 .hd-banenr{height: 530px;position: relative;width: 1050px;margin: 0px auto}
+    .hd-display-block{text-align: center;}
+    .hd-product-list .review-wrapper p{ margin: 0px; text-align: center; line-height: 14px; padding: 0px 5px; height: 35px; overflow: hidden;}
+    .hd-product-list .review-wrapper p a{color: #333;font-size: 12px;}
+    .hd-product-list ul li{width: 196px;height: 310px;background: #fff;float: left;margin: 5px;position: relative;list-style: none;}
+    .hd-product-list ul {padding-bottom: 50px;}
+    .hd-product-list ul li:hover{border-color: #aaafb3;box-shadow: 0px 0px 16px #585858;-webkit-box-shadow: 0px 0px 16px #585858;-o-box-shadow: 0px 0px 16px #585858;-ms-box-shadow: 0px 0px 16px #585858;-moz-box-shadow: 0px 0px 16px #585858;}
+    .hd-product-list ul li:hover .review-wrapper p a{color: #ed6d1f;}
+    .hd-product-list ul li img{width: 196px;height: 192px;}
+    .hd-product-list .price-area{text-align: center;}
+    .hd-product-list .old-price{font-size: 14px;text-decoration: line-through;line-height: 15px;color: #999;}
+    .hd-product-list .current-price{font-size: 29px;font-weight: bold;color: #fb0e20;line-height: 22px;}
+    .hd-product-list .hd-btn-buy{font-size: 14px;color: #fff;font-weight: bold;background: url(./images/201607137.jpg);display: inline-block;width: 100px;height: 32px;line-height: 32px;margin-top: 10px;}
+    .hd-product-list .discount-number2{position: absolute;height: 64px;width: 64px;color: #fff;font-weight: bold;top: 0px;right: 0px;line-height: 58px;border-radius: 50%;background: url(./images/201607136.jpg);font-size: 28px;}
+    .hd-product-list ul li:hover img{opacity: 0.6;}
+</style>
+<script type="text/javascript">
+    (function ($) {
+        var str2 = `<li>
+                <a href="#">
+                    <img src="./images/201607134.jpg" alt="Blackview Ultra A6 Plus 2GB 16GB Dorado">
+                </a>
+                <div class="review-wrapper">
+                    <p>
+                        <a href="#">Blackview Ultra A6 Plus 2GB 16GB Dorado</a>
+                    </p>
+                </div>
+                <div class="price-area">
+                    <span class="old-price">309.99€</span>
+                    <span class="current-price">145.99€</span>
+                </div>
+                <span class="discount-number2">25</span>
+                <a href="#" class="hd-btn-buy">Buy now&gt;&gt;</a>
+            </li>`;
+        var str2_35 = '';
+        for (var i = 0; i < 35; i++) {
+            str2_35 += str2;
+        }
+        $(".lists-35").append(str2_35);
+    })(jQuery);
+</script>

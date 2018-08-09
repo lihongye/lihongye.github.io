@@ -1,0 +1,94 @@
+
+<script type="text/javascript">
+    (function ($) {
+        function trH(item) {
+            return `<tr><td height="${item}"></td></tr>`
+        }
+        function titleT(item) {
+            return ` <tr>
+                        <td height="45" style="vertical-align:middle;background: #ba0042;text-align: center;line-height: 40px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;color: #fff;font-size:24px;">
+                            ${item}
+                        </td>
+                    </tr>`
+        }
+        var str1 = `<tr>
+                        <td style="vertical-align:middle;text-align:right;padding-right:5px;">
+                            <a href="#" style="line-height: 18px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;color: #ba0042;font-size:18px;font-weight: bold;text-decoration: underline;">Ver más &nbsp;&gt;&gt;</a>
+                        </td>
+                    </tr>`,
+            str1_1 = ` <td style="vertical-align:bottom;background: #fff;">
+                        <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                ${trH('10')}
+                                <tr>
+                                    <td style="vertical-align:bottom;">
+                                        <a href="#">
+                                            <img width="100%" style="width:80%; border:0; display:block; margin:0 auto; padding:0; overflow:hidden;" src="./images/201606032.jpg" alt="Refurbished  iPhone 5S 16GB Sealed Box Phone grey">
+                                        </a>
+                                    </td>
+                                </tr>
+                                ${trH('10')}
+                                <tr>
+                                    <td style="vertical-align:bottom; font-family: 'Microsoft Yahei',sans-serif;text-align: center;">
+                                        <a href="#" style="text-decoration:none;color:#333;line-height: 18px;font-size:15px;">XIAOMI Redmi Note 3 3GB 32GB 4000mAh White</a>
+                                    </td>
+                                </tr>
+                                ${trH('10')}
+                                <tr>
+                                    <td>
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="50%" style="vertical-align:middle;font-family: 'Microsoft Yahei',sans-serif;text-align:left;padding-left: 10px;">
+                                                        <a href="#" style="text-decoration:none;">
+                                                            <span style="line-height: 15px;font-size:14px;color:#333;text-decoration: line-through;">$239.99</span>
+                                                            <span style="line-height: 22px;font-size:22px;font-weight:bold;color:#fb56a1;">$239.99</span>
+                                                        </a>
+                                                    </td>
+                                                    <td width="50%" style="vertical-align:middle;font-family: 'Microsoft Yahei',sans-serif;text-align:right;padding-right:10px;">
+                                                        <a href="#" style="text-decoration: none; color: #fff; line-height: 22px; font-size: 15px; background: #fb56a1; padding: 5px 8px;">Buy now &gt;&gt;</a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                ${trH('5')}
+                            </tbody>
+                        </table>
+                    </td>`,
+            str2 = `<tr>
+                        <td>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        ${str1_1}
+                                        <td width="10"></td>
+                                        ${str1_1}
+                                        <td width="10"></td>
+                                        ${str1_1}
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>`;
+
+        var str10 = `<table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center" style="background: url(./images/201607012.jpg)repeat-y;">
+                    <tbody>
+                        <tr>
+                            <td style=" vertical-align:bottom;">
+                                <a href="#">
+                                    <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201607011.jpg"
+                                        alt="LIQUIDACIÓN VERANO 2016">
+                                </a>
+                            </td>
+                        </tr>            
+                        ${trH('20') + titleT('Móviles') + trH('20') + str2 + trH('10') + str2 + trH('20') + str1}
+                        ${trH('20') + titleT('Gadgets y accesorios') + trH('20') + str2 + trH('10') + str2 + trH('20') + str1}
+                        ${trH('20')}
+                    </tbody>
+                </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

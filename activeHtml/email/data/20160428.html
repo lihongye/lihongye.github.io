@@ -1,0 +1,129 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(item) {
+            return `<tr>
+                        <td height="${item}"></td>
+                    </tr>`
+        }
+        function changeStr2(item) {
+            return `<tr>
+                        <td style=" vertical-align:bottom;">
+                            <a href="#">
+                                <img width="100%" style="width:100%; border:0; margin:0; display:block; padding:0; overflow:hidden;" src="./images/${item}.jpg"
+                                    alt="Espejo de maquillaje con LED flash">
+                            </a>
+                    </tr>`
+        }
+        function changeStr3(item) {
+            return ` <tr>
+                        <td style="vertical-align:bottom;">
+                            <p style="font-size: 24px;color:#e31e30;line-height: 25px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">${item}</p>
+                        </td>
+                    </tr>`
+        }
+        function changeStr4(item) {
+            return ` <tr>
+                        <td height="80" style="font-size: 40px; color: #333; line-height: 40px; font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif; text-align: center; font-weight: bold;">${item}</td>
+                    </tr>`
+        }
+        var str1 = `<table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align:bottom;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;border:1px solid #f29c9f;padding:10px;">
+                                    <a href="#" style="text-decoration: none;">
+                                        <img width="100%" style="width:100%; border:0; margin:0; display:block; padding:0; overflow:hidden;" src="./images/201606032.jpg"
+                                            alt="Chuwi iLife V7s Robot de limpieza y aspirador inteligente Rosado">
+                                        <span style="text-align: center;color:#333;font-size:15px;line-height: 16px;">Chuwi iLife V7s Robot de limpieza y</span>
+                                    </a>
+                                    <table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td width="50%" style="vertical-align:bottom;text-align:left;">
+                                                    <a href="#" style="text-decoration: none;">
+                                                        <span style="font-size:15px;text-decoration: line-through;color:#333;line-height: 15px;">149.99€</span>
+                                                        <span style="font-size:22px;color:#e31e30;font-weight:bold;line-height:20px;">124.99€</span>
+                                                    </a>
+                                                </td>
+                                                <td width="50%" style="vertical-align:bottom;">
+                                                    <a href="#">
+                                                        <img width="100%" style="width:100%; border:0; margin:0; display:block; padding:0; overflow:hidden;" src="./images/2016042919.jpg"
+                                                            alt="Espejo de maquillaje con LED flash">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str3 = `<table width="100%" bgcolor="#fff" cellspacing="0" cellpadding="0" border="0" align="center"><tbody>`
+            str2 = `${str3}
+                        <tr>
+                            <td height="340" style="vertical-align:bottom;">
+                                ${str1}
+                            </td>
+                            <td width="15"></td>
+                            <td height="340" style="vertical-align:bottom;">
+                                ${str1}
+                            </td>
+                            <td width="15"></td>
+                            <td height="340" style="vertical-align:bottom;">
+                                ${str1}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>`;
+     
+        var str10 = `${
+                        str3 + changeStr2('201604291') +
+                        changeStr4('Robot de limpieza') + 
+                        changeStr3('¡Que tengas las manos libres!<br>¡Tomémonos un selfie! Querida mamá.')+changeStr1('10')
+                    }
+                        </tbody>
+                    </table>
+                    ${str2 + str3 + changeStr1('12')}
+                        </tbody>
+                    </table>
+                    ${str3}
+                            <tr>
+                                <td width="119"></td>
+                                <td height="340" style="vertical-align:bottom;">
+                                    ${str1}
+                                </td>
+                                <td width="15"></td>
+                                <td height="340" style="vertical-align:bottom;">
+                                    ${str1}
+                                </td>
+                                <td width="120"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        ${
+                            str3 + changeStr1('30') + 
+                            changeStr3('Se regalará un robot de selfie hasta fin de existencias<br>ara quien compre el robot de limpieza.')+
+                            changeStr2('201604298') + changeStr1('50') + changeStr4('Limpieza facial casera') + 
+                            changeStr3('-- Espejito, espejito, ¿Quién es la más bonita?<br>-- Mi mamá.') + changeStr1('10')
+                        }
+                        </tbody>
+                    </table>
+                            ${str2 + str3 + changeStr2('2016042912') + changeStr1('20')}
+                        </tbody>
+                    </table>
+                        ${str2 + str3 + changeStr1('40') + changeStr4('Cocinas') + changeStr3('Mamá, ¡eres la mejor cocinera en el mundo!') + changeStr1('10')}
+                        </tbody>
+                    </table>
+                    ${str2 +　str3 + changeStr1('40') }
+                        <tr>
+                            <td style="vertical-align:bottom;">
+                                <p style="font-size: 24px;color:#fff;line-height: 55px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;">
+                                    <a style="background:#f44e42;padding: 5px 15px;color:#fff;text-decoration: none;" href="#">Ver más &gt;&gt;</a>
+                                </p>
+                            </td>
+                        </tr>
+                        ${changeStr1('20')}
+                    </tbody>
+                </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

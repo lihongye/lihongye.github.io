@@ -1,0 +1,106 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(item) {
+            return `<tr>
+                        <td style=" vertical-align:bottom;">
+                            <a href="#">
+                                <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/${item}"
+                                    alt="geekvida.de - Smartphones - Tablet PCs - Zubehör und vieles mehr">
+                            </a>
+                        </td>
+                    </tr>`
+        }
+        var str1 = `<td width="31%" style="vertical-align:bottom;">
+                        <a href="#" style="text-decoration: none;">
+                            <img style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201608012.png" alt="DOOGEE VOYAGER2 DG310">
+                        </a>
+                    </td>`,
+            str2 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td width="12"></td>
+                                ${str1}
+                                <td width="12"></td>
+                                ${str1}
+                                <td width="12"></td>
+                                ${str1}
+                                <td width="10"></td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str3 = `<td width="31%" style="vertical-align:bottom;">
+                        <a href="#" style="text-decoration: none;">
+                            <img style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201608019.png" alt="UDI U941 Quadcopter 3 In 1 Flying Drone Toy Amazon Green">
+                        </a>
+                    </td>`,
+            str4 = ` <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td width="12"></td>
+                                ${str3}
+                                <td width="12"></td>
+                                ${str3}
+                                <td width="12"></td>
+                                ${str3}
+                                <td width="10"></td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str6 = `<tr>
+                        <td height="50" style="text-align:right;padding-right:15px;">
+                            <a href="#" style="text-decoration: none;font-size:20px;font-weight: bold;color:#fff300;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-decoration: underline;">View More >></a>
+                        </td>
+                    </tr>`,
+            str5 = ` <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            ${str6 + changeStr1('2016080116.png')}
+                            <tr>
+                                <td height="30"></td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+        var str10 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+
+                    ${changeStr1('201608012.jpg')}
+        <tr>
+            <td style="vertical-align:bottom;">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:url(./images/201608011.jpg)repeat-y;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody>
+                                       
+                                        ${changeStr1('2016080116.png')}
+                                        <tr>
+                                            <td height="30"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                ${str2}
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td height="12"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                ${str2 + str5 + str4 + str5 + str4 + str5 + str4}
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody>
+                                        ${str6}
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

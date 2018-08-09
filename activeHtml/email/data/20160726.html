@@ -1,0 +1,86 @@
+<script type="text/javascript">
+    (function ($) {
+        var str1 = ` <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:#fff">
+                        <tbody>
+                            <tr>
+                                <td height="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>`,
+            str2 = `<td width="20"></td><td width="207" style="vertical-align:bottom;background: #fff;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;">
+                        <a href="#" style="text-decoration: none;">
+                            <img style="border:0; display:block; margin:0px auto; padding:0; overflow:hidden;" src="./images/201606032.jpg" alt="MEIZU m3 note 3GB 32GB Weiß">
+                        </a>
+                        <p style="text-align: center; margin: 0px; line-height: 18px; height: 45px; padding: 0px 10px;">
+                            <a href="#" style="text-decoration: none;font-size:14px;color:#333;">MEIZU m3 note 3GB 32GB Weiß</a>
+                        </p>
+                        <p style="text-align: center;margin:0px;line-height:20px;">
+                            <a href="#" style="text-decoration: none;">
+                                <span style="font-size:14px;color:#999;text-decoration: line-through;">225.99€</span>
+                                <span style="font-size:18px;color:#ed6d1f;font-weight:bold;">215.99€</span>
+                            </a>
+                        </p>
+                        <p style="text-align: center;margin:0px;line-height:20px;padding-bottom:5px;">
+                            <a href="#" style="color:#009dd2;font-size: 14px;font-weight:bold;text-decoration: underline;">Jetzt kaufen &gt;&gt;</a>
+                        </p>
+                    </td>`
+        str3 = `<tr>
+                        <td>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        ${str2 + str2 + str2}
+                                        <td width="19"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>`,
+            str4 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:url(./images/2016072730.jpg)repeat-y;">
+                        <tbody>
+                            <tr>
+                                <td height="30"></td>
+                            </tr>
+                            <tr>
+                                <td style=" vertical-align:bottom;">
+                                    <a href="#">
+                                        <img src="./images/201607272.jpg" style="width:80%;border:0; display:block; margin:0 auto; padding:0; overflow:hidden;"
+                                            alt="Handy & Tablet">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20"></td>
+                            </tr>
+                            ${str3}
+                            <tr>
+                                <td height="20"></td>
+                            </tr>
+                            ${str3}
+                            <tr>
+                                <td height="40" style="text-align:right;padding-right:15px;">
+                                    <a href="#" style="text-decoration: none;font-size:18px;font-weight: bold;color:#a21219;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-decoration: underline;">Mehr sehen>></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+
+        var str10 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:#fff">
+                        <tbody>
+                            <tr>
+                                <td style=" vertical-align:bottom;">
+                                    <a href="#">
+                                        <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201607271.jpg"
+                                            alt="geekvida.de - Smartphones - Tablet PCs - Zubehör und vieles mehr">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    ${str4 + str1 + str4 + str1 + str4}`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

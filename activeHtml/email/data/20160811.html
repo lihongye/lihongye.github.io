@@ -1,0 +1,175 @@
+<script type="text/javascript">
+    (function ($) {
+        function trH() {
+            var temTd = ``;
+            for (var i = 0; i < 7; i++) {
+                temTd += `<td height="12"></td>`;
+            }
+            return `<tr>${temTd}</tr>`
+        }
+        function trT(item) {
+            return `<td style="vertical-align:bottom;background:#fff;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align:center;">
+                        <a href="#" style="text-decoration: none;display: block;">
+                            <img style="width:${item}; border:0; display:block; margin:0 auto; padding:0; overflow:hidden;" src="./images/201606032.jpg" alt="Xiaomi Redmi Note 3 Pro 3GB 32GB">
+                            <span style="color:#333;font-size:14px;line-height:18px;">Xiaomi Redmi Note 3 Pro
+                                <br>3GB 32GB</span>
+                            <font style="display: block;">
+                                <span style="color:#333;font-size:14px;text-decoration: line-through;">259.99 €</span>
+                                <span style="color:#FF0800;font-size:24px;font-weight:bold;">239</span>
+                                <span style="color:#FF0800;font-size:14px;">.99 €</span>
+                            </font>
+                            <font style="display: block; height: 40px; line-height: 40px;margin-bottom: 5px;">
+                                <span style="padding:5px 15px;background:#ff6709;color:#fff;font-size:14px;
+                                    border: 1px solid #de5500;">Comprar &gt;&gt;</span>
+                            </font>
+                        </a>
+                    </td>`
+        }
+        function trI(t1, t2, c1) {
+            return `<tr>
+                        <td style="text-align: center;">
+                            ${str1_1}>
+                                <tbody>
+                                    <tr>
+                                        <td height="30"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            ${str1_1}>
+                                <tbody>
+                                    <tr>
+                                        <td width="70"></td>
+                                        <td style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;background:#${c1};border:3px solid #ff0600;height:70px;">
+                                            ${str1_1}>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span style="font-size:18px;color:#222;">${t1}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="25">
+                                                            <span style="font-size: 12px; color: #fff; padding: 3px 8px; background: #ff6709;">${t2}</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td width="70"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            ${str1_1}>
+                                <tbody>
+                                    <tr>
+                                        <td height="30"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>`
+        }
+        var str1_1 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"`,
+            str1 = `<td width="35%" style="vertical-align:bottom;">
+                        ${str1_1}>
+                            <tbody>
+                                <tr>
+                                    <td width="10"></td>
+                                    ${trT('100%')}
+                                    <td width="10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>`,
+            str2 = `<td width="65%" style="vertical-align:bottom;">
+                        ${str1_1}>
+                                <tbody>
+                                    ${trI('Almacén de España', 'Entrega rápida', 'd3d4d4')}
+                                    <tr>
+                                        <td>
+                                            ${str1_1}>
+                                                <tbody>
+                                                    <tr>
+                                                        ${trT('auto')}
+                                                        <td width="10"></td>
+                                                        ${trT('auto')}
+                                                        <td width="10"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>`;
+        var str10 = `${str1_1} style="background:#eee;">
+                        <tbody>
+                            <tr>
+                                <td style=" vertical-align:bottom;">
+                                    <a href="#">
+                                        <img style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201608151.jpg" alt="Smartphones - Tablet PCs - Zubehör und vieles mehr">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:bottom;">
+                                    ${str1_1}>
+                                        <tbody>
+                                            <tr>
+                                                ${str1 + str2}
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:bottom;">
+                                    ${str1_1}>
+                                        <tbody>
+                                            <tr>
+                                                ${str2 + str1}
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ${str1_1}>
+                                        <tbody>
+                                            <tr>
+                                                <td width="10"></td>
+                                                ${trT('100%')}
+                                                <td width="10"></td>
+                                                <td style="vertical-align:bottom;">
+                                                    ${str1_1}>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="40"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                ${trT('auto')}
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td width="10"></td>
+                                                ${trT('100%')}
+                                                <td width="10"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40"></td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

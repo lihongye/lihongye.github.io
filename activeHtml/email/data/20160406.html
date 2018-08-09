@@ -1,0 +1,82 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(item) {
+            return ` <td height="428" style="vertical-align:bottom;">
+                        <a href="#">
+                            <img width="100%" style="width:100%;height: 100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/${item}.jpg"
+                                alt="UMI ROME X">
+                        </a>
+                    </td>`
+        }
+        function changeStr2(item) {
+            return ` <tr>
+                    <td style=" vertical-align:bottom;">
+                            <a href="#">
+                            <img width="100%" style="width:100%;height: 100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/${item}.jpg"
+                                alt="XIAOMI Redmi Note 3 3GB 32GB">
+                        </a>
+                    </td>
+                </tr>`
+        }
+        var str1 = `<table width="100%" bgcolor="#cbffd8" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tbody>`,
+            str2 = `</tbody></table>`,
+            str3 = `<td style="vertical-align:bottom;">
+                        <a href="#" style="display:block;border:1px solid #ddd;">
+                            <img width="100%" style="width:100%;height: 100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201604092.jpg"
+                                alt="Elephone Vowney Lite Smartphone MTK6795 Octa Core 3GB 16GB 5.5 Inch Touch ID Black">
+                        </a>
+                    </td>`,
+            str4 = `<tr> ${str3} <td width="16"></td> ${str3} <td width="15"></td> ${str3} </tr>`
+            str5 = `<td height="15"></td>`, str6 = '',
+            str7 = `<tr>
+                    <td height="40" style="width:70%;background: #13a538;font-size:25px;font-weight: bold;color:#fff100;text-align: right;">
+                        Hot sale above $200
+                    </td>
+                    <td height="40" style=" width:30%;background: #13a538; text-align: right; padding-right: 10px;">
+                        <a href="#" style="font-size: 18px; color: #fff; text-decoration: none;">View More&gt;&gt;</a>
+                    </td>
+                </tr>`,str8 = '',
+            str9 = `<td style=" vertical-align:bottom;">
+                        <a href="#">
+                            <img width="100%" style="width:100%;height: 100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/2016040914.jpg"
+                                alt="XIAOMI Redmi Note 3 3GB 32GB">
+                        </a>
+                    </td>`,
+            str11 = changeStr1('2016040991') + changeStr1('2016040992'),
+            str12 = changeStr2('2016040993') + changeStr2('2016040994'),
+            str13 = changeStr2('2016040995') + changeStr2('2016040996'),
+            str14 = changeStr2('2016040997') + changeStr2('2016040998')
+;
+        for (var i = 0; i < 4; i++) {
+            str8 += str5;
+        }
+
+        str6 = str8 + str5;
+        var str10 = `${str1}
+                    <tr> <td style="vertical-align:bottom;"> <a href="#"> <img src="./images/201604091.png"> </a> </td> </tr> <tr> <td style=" vertical-align:center;height: 15px"></td> </tr> ${str2 + str1 + str4}
+                    <tr> ${str6}
+                    </tr> ${str4 + str2 + str1}
+                    <tr> ${str5}
+                    </tr> <tr> <td style=" vertical-align:bottom;"> <a href="#"> <img src="./images/201604098.png"> </a> </td> </tr> <tr> ${str5}
+                    </tr> ${str2 + str1 + str7 + str2 + str1}
+                    <tr> ${str11}
+                    <td width="14"></td> <td height="428"> ${str1 + str12 + str2}
+                    </td> </tr> <tr> ${str8}
+                    </tr> ${str2 + str1 + str7 + str2 + str1}
+                    <tr> <td height="428"> ${str1 + str13 + str2}
+                    </td> <td width="14"></td> <td height="428"> ${str1 + str14 + str2}
+                    </td> </tr> <tr> ${str5 + str5 + str5}
+                    </tr> ${str2 + str1 + changeStr2('2016040910')}
+                    <tr> ${str5}
+                    </tr> ${str2 + str1}
+                    <tr> ${str9}
+                    <td width="10"></td> ${str9}
+                    <td width="10"></td> ${str9}
+                    </tr> ${str2 + str1}
+                    <tr> ${str5}
+                    </tr> ${str2}
+                    </tbody> </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

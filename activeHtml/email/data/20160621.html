@@ -1,0 +1,125 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(item) {
+            return `<tr>
+                        <td style="text-align: right;font-family:Arial, Helvetica, sans-serif;border-bottom:1px solid #1D60AE;">
+                            <table width="100%" bgcolor="#e8e8e8" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center; width: 140px; color: #fff; background: #1D60AE; height: 45px; line-height: 45px; vertical-align: bottom; border-radius: 15px 15px 0px 0px; font-size: 25px;">
+                                            ${item}
+                                        </td>
+                                        <td style="text-align: right;font-family:Arial, Helvetica, sans-serif;padding-right: 10px;">
+                                            <a href="#" style="font-size:16px; color:#1D60AE;text-decoration: none;">Mehr sehen>></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td height="20"></td></tr>`
+        }
+        var str1 = `<table width="100%" bgcolor="#e8e8e8" cellspacing="0" cellpadding="0" border="0" align="center"><tbody>`,
+            str1_1 = ` <tr>
+                            <td>
+                                <a href="#">
+                                    <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/gv/201606032.jpg"
+                                        alt="">
+                                </a>
+                            </td>
+                            <td width="25"></td>
+                        </tr>
+                    </tbody>
+                </table>`,
+            str1_2 = `<tr>
+                        <td width="25"></td>
+                        <td style="background:#1D60AE;text-align:center;height:110px;vertical-align: middle;">
+                            <a href="#" style="color:#fff;text-decoration: none;font-size:15px;display: block;">
+                                <span style="line-height:18px;display: block;">Elephone M2 3G/32G Android 5.1</span>
+                                <span style="line-height:35px;display: block;">
+                                    <font style="text-decoration: line-through;">209.99€</font>
+                                    <font style="color:#fff100;">
+                                        <b style="font-size:20px;font-weight: bold;">209</b>.99€</font>
+                                </span>
+                                <span style="line-height:18px;display: block;">Jetzt kaufen&gt;&gt;</span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody></table></td>`,
+            str2 = ` <tr><td>
+                        ${str1 + str1_1 + str1 + str1_2}
+                        <td width="15"></td>
+                        <td>
+                        ${str1 + str1_1 + str1 + str1_2}
+                        <td width="15"></td>
+                        <td>
+                        ${str1 + str1_1 + str1 + str1_2}
+                    </tr>`;
+
+        var str10 = `${str1}
+                            <tr>
+                                <td style=" vertical-align:bottom;">
+                                    <a href="#">
+                                        <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201606221.jpg"
+                                            alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20"></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:bottom;font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#333; font-weight:bold;text-align: center;padding: 0px 15px;text-align: left;">
+                                    Jedes Modell hat meisten 1-2 Stücke auf Lager, deshalb ist es möglich, dass zwei Kunden gleichzeitig eine Bestellung machen
+                                    und es gibt nur 1 Stücke auf Lager. Welche Kunde kann endlich das Produkt bekommen, wird von unser System
+                                    automatisch entscheinden. Dann unsere Kundenservice wird dem anderen Kunden mitteilen und die Bestellung
+                                    stornieren lassen. Geekvida.de@2016. Alle Rechte vorbehalten!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    ${str1 + changeStr1('Xiaomi')}
+                        </tbody>
+                    </table>
+                   ${str1 + str2}
+                            <tr>
+                                <td height="15"></td>
+                                <td height="15"></td>
+                                <td height="15"></td>
+                                <td height="15"></td>
+                                <td height="15"></td>
+                            </tr>
+                            ${str2}
+                        </tbody>
+                    </table>
+                    ${str1}
+                            <tr>
+                                <td height="40"></td>
+                            </tr>
+                            ${changeStr1('Elephone')}
+                        </tbody>
+                    </table>
+                    
+                            ${str1 + str2}
+                        </tbody>
+                    </table>
+                    ${str1}
+                            <tr>
+                                <td height="40"></td>
+                            </tr>
+                            ${changeStr1('Umi')}
+                        </tbody>
+                    </table>
+                            ${str1 + str2}
+                        </tbody>
+                    </table>
+                    ${str1}
+                            <tr><td height="40"></td></tr>
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

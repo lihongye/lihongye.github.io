@@ -1,0 +1,189 @@
+<script type="text/javascript">
+    (function ($) {
+        function changeStr1(h1, s1, t1, c1) {
+            return `<tr>
+                        <td height="${h1}" style="font-size: ${s1}px;color:#fff;font-weight:bold;text-align: center;background: #${c1};">${t1}</td>
+                    </tr>`
+        }
+        var str1 = `<table width="100%" bgcolor="#efeeee" cellspacing="0" cellpadding="0" border="0" align="center"><tbody>`,
+            str3 = ` <tr>
+                        <td height="200" style="vertical-align:bottom;text-align: center;">
+                            <img style="height: 195px;border:0; display:block; margin:0 auto; padding:0; overflow:hidden;" src="./images/201606032.jpg"
+                                alt="Xiaomi Mi Band Pulsera inteligente">
+                        </td>
+                    </tr>`
+        str2 = ` <tr>
+                        <td height="65" style="font-size: 16px;color: #000000;font-weight: bold;text-align:center;padding: 0px 10px;line-height: 22px;">Xiaomi Mi Band Pulsera inteligente</td>
+                    </tr>${str3}`,
+            str4 = `<tr>
+                        <td height="50" style="text-align: center;">
+                            <span style="text-decoration:line-through;font-size:18px;color:#323232;">34.99€</span>
+                            <span style="font-size: 36px;color:#009944;font-weight: bold;">29</span>
+                            <span style="font-size: 24px;color:#009944;font-weight: bold;">.99€</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="50" style="text-align: center;font-size: 18px;font-weight: bold;">
+                            <a href="http://www.geekvida.es/mifone-l18-pulsera-inteligente-p115025.html" style="color:#fff;background:#009944;padding: 5px 10px;text-decoration: none;">Comprar&nbsp;&gt;&gt;</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>`,
+            str5 = `<tr>
+                        <td height="65" style="font-size: 20px;color: #000000;font-weight: bold;text-align:center;padding: 0px 10px;">CHUWI Hi8</td>
+                    </tr>
+                    <tr>
+                        <td height="120" style="font-size: 16px;color: #333333;text-align: center;padding: 0px 10px;line-height: 22px;">-Ram 2GB Rom 32GB
+                            <br>-Pantalla de 8.0 pulgadas
+                            <br>-Windows 10+ Android 4.4
+                            <br>-Batería de 4000mAh
+                            <br>-Cámaras de 2.0+0.3MP</td>
+                    </tr>
+                    <tr>
+                        <td height="50" style="text-align: center;">
+                            <span style="text-decoration:line-through;font-size:18px;color:#323232;">109.99€</span>
+                            <span style="font-size: 36px;color:#0177d7;font-weight: bold;">99</span>
+                            <span style="font-size: 24px;color:#0177d7;font-weight: bold;">.99€</span>
+                        </td>
+                    </tr>
+                    ${str3}
+                    <tr>
+                        <td height="50" style="text-align: center;font-size: 18px;font-weight: bold;">
+                            <a href="#" style="color:#fff;background:#0177d7;padding: 5px 10px;text-decoration: none;">Comprar&nbsp;&gt;&gt;</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>`,
+            str6 = ` <tr>
+                        <td height="65" style="font-size: 19px;color: #000000;font-weight: bold;text-align: center;padding: 0px 10px;line-height: 22px;">Cubot S550 2GB 16GB Negro/Blanco</td>
+                    </tr>
+                    <tr>
+                        <td height="160" style="font-size: 16px;color: #333333;text-align: center;padding: 0px 10px;line-height: 22px;">-Pantalla de 5.5 pulgadas
+                            <br>-Huellas dactilares
+                            <br>-Cámaras de 13.0+ 5.0MP
+                            <br>-Extención hasta 32GB</td>
+                    </tr>
+                    <tr>
+                        <td height="50" style="text-align: center;">
+                            <span style="text-decoration:line-through;font-size:18px;color:#323232;">144.99€</span>
+                            <span style="font-size: 36px;color:#ff0000;font-weight: bold;">114</span>
+                            <span style="font-size: 24px;color:#ff0000;font-weight: bold;">.99€</span>
+                        </td>
+                    </tr>
+                    ${str3}
+                    <tr>
+                        <td height="50" style="text-align: center;font-size: 18px;font-weight: bold;">
+                            <a href="#" style="color:#fff;background:#ff0000;padding: 5px 10px;text-decoration: none;">Comprar&nbsp;&gt;&gt;</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>`;
+        var str10 = `${str1}
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                       
+                        ${changeStr1('40', '25', 'PULSERA DEPORTIVA', '009944')}
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                ${str1}
+                        <tr>
+                            <td style=" vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-right: 1px solid #009944;border-bottom: 1px solid #009944;">
+                                    <tbody>
+                                        ${changeStr1('35', '14', 'Unidades limitadas', '009944') + str2 + str4}
+                            </td>
+                            <td width="10"></td>
+                            <td style=" vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-right: 1px solid #009944;border-bottom: 1px solid #009944;border-left: 1px solid #009944;">
+                                    <tbody>
+                                        ${changeStr1('35', '13', 'Mejor relación calidad precio', '009944') + str2 + str4}
+                            </td>
+                            <td width="10"></td>
+                            <td style=" vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-bottom: 1px solid #009944;border-left: 1px solid #009944;">
+                                    <tbody>
+                                        ${changeStr1('35', '14', 'Mejor compañero deportivo', '009944') + str2 + str4}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                ${str1}
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                       
+                        ${changeStr1('40', '25', 'TABLETAS', '0177d7')}
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                ${str1}
+                        <tr>
+                            <td style=" vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-right: 1px solid #0177d7;border-bottom: 1px solid #0177d7;">
+                                    <tbody>
+                                       
+                                        ${changeStr1('35', '14', 'Mejor Ganga', '0177d7') + str5}
+                                        
+                            </td>
+                            <td width="10"></td>
+                            <td style=" vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-right: 1px solid #0177d7;border-bottom: 1px solid #0177d7;border-left: 1px solid #0177d7;">
+                                    <tbody>
+                                       
+                                        ${changeStr1('35', '14', 'Tablet poderoso', '0177d7') + str5}
+                            </td>
+                            <td width="10"></td>
+                            <td style=" vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-bottom: 1px solid #0177d7;border-left: 1px solid #0177d7;">
+                                    <tbody>
+                                        
+                                        ${changeStr1('35', '14', 'Buque insignia', '0177d7') + str5}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                ${str1}
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                        
+                        ${changeStr1('40', '25', 'MÓVILES', 'fe0000')}
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                ${str1}
+                        <tr>
+                            <td style="vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-right: 1px solid #fe0000;border-bottom: 1px solid #fe0000;">
+                                    <tbody>
+                                      
+                                        ${changeStr1('40', '14', 'MEJOR RELACIÓN', 'fe0000') + str6}
+                            </td>
+                            <td width="10"></td>
+                            <td style=" vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-right: 1px solid #fe0000;border-bottom: 1px solid #fe0000;border-left: 1px solid #fe0000;">
+                                    <tbody>
+                                        
+                                        ${changeStr1('40', '14', 'BATERÍA MONSTUOSA', 'fe0000') + str6}
+                            </td>
+                            <td width="10"></td>
+                            <td style="vertical-align:bottom;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#fff" style="border-bottom: 1px solid #fe0000;border-left: 1px solid #fe0000;">
+                                    <tbody>
+                                       
+                                        ${changeStr1('40', '14', 'BATERÍA MONSTUOSA', 'fe0000')  + str6}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

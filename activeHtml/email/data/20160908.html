@@ -1,0 +1,131 @@
+<script type="text/javascript">
+    (function ($) {
+        function trH(item, w1) {
+            return `<tr>
+                        <td>
+                            <a href="#">
+                                <img style="border:0; ${w1}display:block; margin:0 auto; padding:0; overflow:hidden;" src="./images/${item}" alt="Redmi Note 3 Pro 3GB 32GB Plata">
+                            </a>
+                        </td>
+                    </tr>`
+        }
+        function trT(item) {
+            return `<tr>
+                        <td height="${item}" style="background:#9784A7">
+                        </td>
+                        <td height="${item}" width="10" style="background:#9784A7">
+                        </td>
+                        <td height="${item}" width="10" style="vertical-align:bottom;">
+                        </td>
+                    </tr>`
+        }
+       
+        var str1_1 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"`,
+            str1 = `<tr>
+                        <td height="135" style="vertical-align:middle;background:url(./images/201609093.png) no-repeat center center;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;">
+                            ${str1_1}>
+                                <tbody>
+                                    <tr>
+                                        <td width="150"></td>
+                                        <td style="text-align:center;">
+                                            <a href="#" style="text-decoration: none;display: block;">
+                                                <span style="font-size:36px;color:#ff473b;display: block;line-height:36px;">LA MARCA XIAOMI</span>
+                                                <span style="font-size:16px;color:#ff473b;display: block;line-height:16px;">los Top ventas de marca XIAOMI</span>
+                                            </a>
+                                        </td>
+                                        <td width="150" style="vertical-align:bottom;">
+                                            <a href="#" style="text-decoration: underline;color:#333;font-size:16px;line-height: 16px;text-align: left;font-weight: bold;">Ver más >></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="15"></td>
+                    </tr>`
+            str5 = `<td style="vertical-align:bottom;">
+                    ${str1_1}>
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align:bottom;background:#9784A7">
+                                    ${str1_1}>
+                                        <tbody>
+                                            <tr>
+                                                <td height="15"></td>
+                                            </tr>
+                                            ${trH('201608293-1.png', '') + trH('201608293-2.png', '')}
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td width="10" style="vertical-align:bottom;background:#9784A7"></td>
+                                <td width="10" style="vertical-align:bottom;"></td>
+                            </tr>
+                            ${trT('5')}
+                        </tbody>
+                    </table>
+                    ${str1_1} style="background:#F1C5CA;">
+                        <tbody>
+                            <tr>
+                                <td height="10"></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:middle;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif; text-align: center;">
+                                    <a href="#" style="text-decoration: none;display:block;">
+                                        <span style="color:#333;font-size:14px;line-height: 15px;">Redmi Note 3 Pro 3GB
+                                            <br> 32GB Plata</span>
+                                        <font style="display: block;line-height:30px;height:30px;margin:5px 0px 0px 0px;">
+                                            <span style="color:#333;font-size:14px;text-decoration: line-through;">239.99€</span>
+                                            <span style="font-size:30px;font-weight: bold;color:#e53935;">214</span>
+                                            <span style="font-size:20px;color:#e53935;">.99€</span>
+                                        </font>
+                                        <span style="color:#e53935;font-size:14px;">Comprar &gt;&gt;</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    ${str1_1}>
+                        <tbody>
+                            ${trT('15')}
+                        </tbody>
+                    </table>
+                </td>`,
+            str6 = `<tr>
+                        <td height="15"></td>
+                    </tr>
+                    ${str1}
+                    <tr>
+                        <td>
+                            ${str1_1}>
+                                <tbody>
+                                    <tr>
+                                        <td width="10"></td>
+                                        <td width="10" style="background:#9784A7"></td>
+                                        ${str5}
+                                        <td width="10"></td>
+                                        <td width="10" style="background:#9784A7"></td>
+                                        ${str5}
+                                        <td width="10"></td>
+                                        <td width="10" style="background:#9784A7"></td>
+                                        ${str5}
+                                        <td width="10"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>`;
+        var str10 = ` ${str1_1} style="background:url(./images/201609092.jpg)repeat-y top;">
+                        <tbody>
+                            ${trH('201609091.jpg', 'width:100%;') + str6 + str6 + str6}
+                            <tr>
+                                <td height="25"></td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

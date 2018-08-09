@@ -1,0 +1,87 @@
+<script type="text/javascript">
+    (function ($) {
+        function trH() {
+            var temTd = ``;
+            for(var i = 0; i < 7; i++){
+                temTd += `<td height="12"></td>`;
+            }
+            return `<tr>${temTd}</tr>`
+        }
+        function trT(item) {
+            return `<td style="vertical-align:bottom;padding:0 10px;">
+                    <a href="#"><img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/${item}.png" alt="Lenovo K4 Note"></a>
+                </td>`
+        }
+        function trI(item) {
+            return ` <tr>
+                        <td style="vertical-align:bottom;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background: url(./images/201607138.png)no-repeat center;">
+                                <tbody>
+
+                                <tr>
+                                    <td style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;vertical-align: bottom; text-align: center; font-size: 18px; font-weight: bold; color: #fff; line-height: 48px; height: 50px;">
+                                        ${item}
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td height="20"></td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>`
+        }
+        var str1 = `<td width="12"></td>
+                    <td width="31%" style="vertical-align:bottom;background: #fff;">
+                     <a href="#" style="text-decoration: none;">
+                        <img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201607139.jpg" alt="OUKITEL U10">
+                        <p style="font-size:12px;color:#333;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;line-height:15px;">OUKITEL U10</p>
+                        <p style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;margin:0px;line-height:20px;">
+                            <span style="font-size:12px;color:#999;text-decoration: line-through;">$174.99</span>
+                            <span style="font-size:18px;color:#ed6d1f;font-weight:bold;">$149.99</span>
+                        </p>
+                        <p style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-align: center;color:#009dd2;font-size: 14px;font-weight:bold;text-decoration: underline;margin:0px;line-height:20px;padding-bottom:5px;">Buy now &gt;&gt;</p>
+                     </a>
+                   </td>`,
+            str2 = `<tr>
+                    ${str1 + str1 + str1}
+                   <td width="10"></td>
+                </tr>`
+            str3 = ` <tr>
+                        <td style="vertical-align:bottom;padding:0px 5px;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background:rgba(54, 189, 228, 0.6);">
+                                <tbody>
+                                ${trH() + str2 + trH() + str2 +　trH()}
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr><td height="50"style="text-align:right;padding-right:15px;"><a href="#" style="font-size:18px;font-weight: bold;color:#013bb1;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;text-decoration: underline;">View More >></a></td></tr>`;
+
+        var str10 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background: url(./images/201607138.png)no-repeat center;">
+                        <tbody>
+                            <tr>
+                                <td style=" vertical-align:bottom;">
+                                    <a href="#"><img width="100%" style="width:100%; border:0; display:block; margin:0; padding:0; overflow:hidden;" src="./images/201607132.jpg" alt="LIQUIDACIÓN VERANO 2016"></a>
+                                </td>
+                            </tr>
+                    </tbody></table>
+                    <table width="100%"cellspacing="0" cellpadding="0" border="0" align="center" style="background: url(./images/201607131.jpg)repeat-y;">
+                        <tbody>
+                        <tr><td height="15"></td></tr>
+                        <tr>
+                        ${trT('201607133')}
+                        </tr>
+                        <tr><td height="15"></td></tr>
+                        <tr><td>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                <tr>
+                                    ${trT('201607137') + trT('201607137')}
+                                </tr>
+                                
+                            </tbody></table>
+                        </td></tr>
+                        ${trT('Mobile & Tablets') + str3 + trT('Accessories') + str3}
+                    </tbody></table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

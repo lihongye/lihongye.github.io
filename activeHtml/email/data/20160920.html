@@ -1,0 +1,247 @@
+<script type="text/javascript">
+    (function ($) {
+        function trH(item) {
+            return `<tr>
+                        <td height="${item}" style="background:rgba(213, 138, 42, 0.7)">
+                        </td>
+                        <td height="${item}" width="10" style="background:rgba(213, 138, 42, 0.7)">
+                        </td>
+                        <td height="${item}" width="10" style="vertical-align:bottom;">
+                        </td>
+                    </tr>`
+        }
+        function tdH(item) {
+            return `<tr>
+                        <td height="${item}"></td>
+                    </tr>`
+        }
+        function tdC(item) {
+            return ` <td width="155" style="vertical-align:bottom;background:rgba(${item});">
+                        ${str1_1}>
+                            <tbody>
+                                <tr>
+                                    <td style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif; text-align: left;">
+                                        <a href="#" style="text-decoration: none;color:#fff;display: block;">
+                                            <span style="font-size:15px;line-height: 16px;display:block;font-weight:bold;">Redmi Note 3 Pro</span>
+                                            <span style="font-size:14px;line-height: 14px;display:block;margin-bottom: 14px;">3GB 32GB Plata</span>
+                                            <span style="font-size:14px;line-height: 14px;display:block;text-decoration: line-through">239.99€</span>
+                                            <font style="line-height: 30px;display:block;color:#FFF100">
+                                                <span style="font-size:30px;font-weight: bold;">214</span>
+                                                <span style="font-size:20px;">.99€</span>
+                                            </font>
+                                            <font style="line-height: 26px; display: block; color: #fff; height: 26px;">
+                                                <span style=" font-size: 14px; background: #E5601F; padding: 3px 10px; border-radius: 15px;">Comprar &gt;&gt;</span>
+                                            </font>
+                                        </a>
+                                    </td>
+                                </tr>
+                                ${tdH('15') }
+                            </tbody>
+                        </table>
+                    </td>`
+        }
+        function tdC2(item) {
+            return ` <td style=" vertical-align:bottom;background:rgba(${item});">
+                        ${str1_1}>
+                            <tbody>
+                                ${tdH('15') }
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <img style="border:0; display:block; margin:0 auto; padding:0; overflow:hidden;" src="./images/201608293-1.png" alt="Redmi Note 3 Pro 3GB 32GB Plata">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>`
+        }
+        function trT(item) {
+            return `<tr>
+                        <td style="vertical-align: bottom;background: url(./images/201609222.jpg) no-repeat center top;">
+                            ${str1_1}>
+                                <tbody>
+                                    ${tdH('25') }
+                                    <tr>
+                                        <td align="center">
+                                            <img src="./images/201609222.png">
+                                        </td>
+                                    </tr>
+                                    ${tdH('10')}
+                                    <tr>
+                                        <td align="center" height="34">
+                                            <a style="text-decoration: none;" href="#">
+                                                <span style="font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;font-size:17px;color:#fff;padding: 5px 15px;background: rgba(236, 132, 65, 0.7);">${item}</span>
+                                            </a>
+                                        </td>
+                                    </tr>`
+        }
+        function tdI(item) {
+            return `<td>
+                        <a href="#">
+                            <img style="border:0; display:block; margin:0 auto; padding:0; overflow:hidden;" src="./images/201608293-${item}.png" alt="Redmi Note 3 Pro 3GB 32GB Plata">
+                        </a>
+                    </td>`
+        }
+        var str1 = ` <td width="207">
+                        <a href="#"
+                            style="display: block;">
+                            <img src="./images/201606032.jpg" style="width:200px;height:177px;margin:0px auto;border:0px;padding:0px;display: block;"
+                                alt="Elephone P6i Black+Silver">
+                        </a>
+                        <a href="#"
+                            style="display: block;text-decoration: none;text-align: center;padding:10px 0px 0px 0px;font-weight:bold;">
+                            <span style="font-size:15px;color:#500047;line-height: 15px;display: block;">Elephone P6i
+                                <br>Black+Silver</span>
+                            <span style="font-size:15px;color:#500047;line-height: 22px;display: block;padding: 5px 0px 0px 0px;">
+                                <span style="text-decoration: line-through;">$42.99</span>
+                                <br>
+                                <span style="font-size:32px;color:#f40319;">$34.99</span>
+                            </span>
+                        </a>
+                    </td>`,
+            str1_1 = `<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"`,
+            str2 = `<td style=" vertical-align:bottom;">
+                        ${str1_1}>
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align:bottom;background:rgba(213, 138, 42, 0.7)">
+                                        ${str1_1}>
+                                            <tbody>
+                                                <tr>
+                                                    <td height="15"></td>
+                                                </tr>
+                                                ${'<tr>' + tdI('1') + '</tr><tr>' + tdI('2') +  '</tr>'}
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td width="10" style="vertical-align:bottom;background:rgba(213, 138, 42, 0.7)"></td>
+                                    <td width="10" style="vertical-align:bottom;"></td>
+                                </tr>
+                                ${trH('5')}
+                            </tbody>
+                        </table>
+                        ${str1_1} style="background:#E5601F;">
+                            <tbody>
+                                ${tdH('10')}
+                                <tr>
+                                    <td style="vertical-align:middle;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif; text-align: center;">
+                                        <a href="#" style="text-decoration: none;display:block;">
+                                            <span style="color:#fff;font-size:14px;line-height: 15px;">Redmi Note 3 Pro 3GB
+                                                <br> 32GB Plata</span>
+                                            <font style="display: block;line-height:30px;height:30px;margin:5px 0px 0px 0px;">
+                                                <span style="color:#fff;font-size:14px;text-decoration: line-through;">239.99€</span>
+                                                <span style="font-size:30px;font-weight: bold;color:#FFF100;">214</span>
+                                                <span style="font-size:20px;color:#FFF100;">.99€</span>
+                                            </font>
+                                            <span style="color:#fff;font-size:14px;">Comprar &gt;&gt;</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                ${tdH('10')}
+                            </tbody>
+                        </table>
+                        ${str1_1}>
+                            <tbody>
+                                ${trH('10')}
+                            </tbody>
+                        </table>
+                    </td>`,
+            str3 = `${tdH('10')}
+                    <tr>
+                        <td>
+                            <table width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            ${str1_1}>
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="10"></td>
+                                                        <td width="10" style="background:rgba(213, 138, 42, 0.7)"></td>
+                                                        ${str2}
+                                                        <td width="10"></td>
+                                                        <td width="10" style="background:rgba(213, 138, 42, 0.7)"></td>
+                                                        ${str2}
+                                                        <td width="10"></td>
+                                                        <td width="10" style="background:rgba(213, 138, 42, 0.7)"></td>
+                                                        ${str2}
+                                                        <td width="10"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    ${tdH('10')}
+                    <tr>
+                        <td align="right" height="34">
+                            <a href="#" style="font-weight:bold;font-size:18px;font-family: 'microsoft yahei',Arial, Helvetica,Arial,sans-serif;padding:5px 10px;background:#e5601f;color:#fff;text-decoration: none;">Ver más &gt;&gt;</a>
+                        </td>
+                    </tr>
+                    ${tdH('10')}`;
+        var str10 = `${str1_1} style="background:#ffe49d">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <a href="#">
+                                            <img src="./images/201609221.jpg" alt="XIAOMI/ Móviles reformados / iPhone" style="width: 100%;margin:0px;border:0px;padding:0px;display: block;">
+                                        </a>
+                                    </td>
+                                </tr>
+                                ${tdH('15') +　trT('Con gran diseño,características potentes y precio competitivo.') + tdH('10')}
+                                               
+                                                <tr>
+                                                    <td style="vertical-align: top;">
+                                                        ${str1_1}>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="10"></td>
+                                                                    <td>
+                                                                        ${str1_1}>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td width="10" style="vertical-align:bottom;background:rgba(213, 138, 42, 0.7);"></td>
+                                                                                    ${tdC('213, 138, 42, 0.7') + 　tdC2('213, 138, 42, 0.7') + tdC2('236, 132, 65, 0.7') + tdC('236, 132, 65, 0.7')}
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td width="10" style="vertical-align:top;"></td>
+                                                                                    <td width="155" style="vertical-align:top;"></td>
+                                                                                    ${tdI('2') + tdI('2')}
+                                                                                    <td width="155" style=" vertical-align:top;"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td width="10"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                ${str3}
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                               
+                                                ${trT('Están en buenas condiciones con precio económico .') + str3}
+                            
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                                ${trT('Smartphones reacondicionados de gama alta.') + str3}
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>`;
+        $("#main").prepend(str10);
+    })(jQuery);
+</script>

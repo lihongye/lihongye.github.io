@@ -1,0 +1,44 @@
+<div class="hd-20161017">
+  <a href="#" class="banner-bg"></a>
+  <div class="hd-block-area w1110">
+    <div class="hd-block-show active">
+      <ul class="lists-16 clearfloat"></ul>
+    </div>
+  </div>
+</div>
+  <style>
+  .hd-20161017 {background: #e5ddd0;}
+  .hd-20161017 .banner-bg {display: block;width:100%;background: url(./images/201610171.jpg)no-repeat center;height: 562px;}
+  .hd-20161017 .hd-block-area {margin-top:25px;padding-bottom: 65px;}
+  .hd-block-area .hd-block-show ul li {background:#fff;float: left;margin: 0px 5px 10px 5px;height: 360px;width: 267px;text-align: center;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-ms-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;position: relative;}
+   .hd-block-area .hd-block-show ul li:hover{transform: translateY(-6px); -webkit-transform: translateY(-6px); -o-transform: translateY(-6px); -ms-transform: translateY(-6px); -moz-transform: translateY(-6px);box-shadow: 0px 15px 15px #8f7c5e;-webkit-box-shadow: 0px 15px 15px #8f7c5e;-ms-box-shadow: 0px 15px 15px #8f7c5e;-o-box-shadow: 0px 15px 15px #8f7c5e;}
+  .hd-block-show ul li .product-info {font-size: 16px; line-height: 18px; margin: 0px; color: #4d4436; height: 35px; overflow: hidden; padding: 10px;}
+   .hd-block-show ul li .product-info a {color:#4d4436;}
+  .hd-block-show ul li .product-img {width:90%;margin-top:10px;}
+  .hd-20161017 .price-area {margin-top:15px;}
+  .price-area .old-price {font-size: 14px;color:#4d4436;text-decoration: line-through;margin-bottom: 0px;line-height: 20px;margin-right:5px;}
+  .price-area .current-price{font-size: 30px;font-weight: bold;color: #ff3b01;margin-bottom: 0px;line-height: 15px;}
+  .hd-20161017 .btn-area {margin-top:10px;}
+  .btn-area .btn-text {color: #ff3b01;font-size: 18px;text-decoration: underline;}
+  </style>
+  <script type="text/javascript">
+    (function($){
+        var str1 = '';
+        for(var i = 0; i < 16; i++){
+          str1 += `<li>
+                    <a href="#"><img class="product-img" src="./images/2016040616.jpg"></a>
+                    <p class="product-info"><a href="">Xiaomi Redmi 3 Pro 3GB 32GB Dorado clásico-idioma español</a></p>
+                    <div class="price-area">
+                      <span class="old-price">259,99 €</span><span class="current-price">259,99 €</span>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#">
+                          <span class="btn-text">Comprar &gt;&gt;</span>
+                        </a>
+                    </div>
+                  </li>`;
+        }
+        
+        $(".lists-16").prepend(str1);
+    })(jQuery); 
+    </script>
