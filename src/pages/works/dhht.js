@@ -132,9 +132,9 @@ export default class Dhht extends Component{
                       {
                         el.active ? el.active.map((elSecond, index) => {
                           return <tr key={index}>
-                              <td><a className="link" href={ `/activePage/hdPage.html?name=${elSecond.search}&marker=${elSecond.marker}`} target="__blank">{ `${elSecond.info}活动` }</a></td>
+                              <td><a className="link" href={ `/activeHtml/activePage/hdPage.html?name=${elSecond.search}&marker=${elSecond.marker}`} target="__blank">{ `${elSecond.info}活动` }</a></td>
                               <td>
-                                { elSecond.email === "0" ? '' : <a className="link" href={ `/email/${elSecond.marker}-email.html?name=${elSecond.search}` } target="__blank">{`邮件 (${elSecond.time})` }</a>}
+                                { elSecond.email === "0" ? '' : <a className="link" href={ `/activeHtml/email/${elSecond.marker}-email.html?name=${elSecond.search}` } target="__blank">{`邮件 (${elSecond.time})` }</a>}
                               </td>
                               <td>{ elSecond.time }</td>
                               </tr>

@@ -8,10 +8,11 @@
 
 # production
 /build
+/activeHtml
 /src/img
-/public/img
-/public/activePage/images
-/public/email/images
+/public/activeHtml/img
+/public/activeHtml/activePage/images
+/public/activeHtml/email/images
 .project
 package-lock.json
 
