@@ -1,4 +1,4 @@
-body{background:url(../img/timg.jpg) center center no-repeat fixed;background-size: cover;}
+body{background-size: cover;}
 /*页面菜单样式*/
 .menuList {
 	position: fixed;
@@ -34,7 +34,6 @@ body{background:url(../img/timg.jpg) center center no-repeat fixed;background-si
 	width:100%;
 	overflow: hidden;
 	background-attachment: scroll,fixed;
-	background-image: url(../img/top-3200.svg), url(../img/timg.jpg);
 	background-position: bottom center,center center;
 	background-repeat: repeat-x,no-repeat;
 	background-size: 3200px 460px,cover;
@@ -279,7 +278,6 @@ thead td {font-weight: bold;}
 /*footer*/
 #footer {
 	background-attachment: scroll,fixed;
-	background-image: url(../img/bottom-1600.svg),url(../img/timg.jpg);
 	background-position: top center,center center;
 	background-repeat: repeat-x,no-repeat;
 	background-size: 3200px 460px,cover;

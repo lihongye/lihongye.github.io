@@ -4,14 +4,6 @@ export default class Home extends Component{
   constructor(props){
     super(props);
     this.state = {
-      cudeImg:[
-        {content:require("../img/2.jpg")},
-        {content:require("../img/3.jpg")},
-        {content:require("../img/4.jpg")},
-        {content:require("../img/5.jpg")},
-        {content:require("../img/6.jpg")},
-        {content:require("../img/7.jpg")}, 
-      ],
       sliderContent:[
         {color:"#2e6930",ico:"fa-television",title:"公司官网",url:"/test1",content:"企业建站,严格按照提供的设计稿和原型来开发并提供一些优化建议,或者只给出一些想法,剩下的全权由我方设计和开发. 价格优惠可以谈. 公司官网能让公司客户直观的了解到一个公司的基本概况, 对公司有一个初步的了解, 为客户对公司的信任度增加了砝码. 可以在公司官网上开发留言或者在线服务功能,与客户的沟通更加便捷, 比使用常规的聊天软件, 在业务洽谈方面成功率更搞。提供长期维护。"},
         {color:"#05920A",ico:"fa-opencart",title:"Magento电商网站",url:"/test2",content:"整站建设也可以在原来的基础上进行二次开发,需要提供设计稿。 Magento标准的多语言、多货币和多商店支持, 支持多种国际流行支付方式和多种配送方式, 安全性非常高，目前尚未听说Magento网站被黑, 支持绑定产品，虚拟产品，产品多属性. Magento 功能越来越人性化，也是越来越新颖。像是产品标签、多送货地址或产品比较系统等功能，您不需要支付额外的费用来取得。提供长期维护。"},
@@ -56,7 +48,7 @@ export default class Home extends Component{
   }
   render(){
     var _this = this.state, tempCudeBox = [], tempCudeImg = [], tempSlider = [];
-    for(var i = 0, len = _this.cudeImg.length; i < len; i++){
+    for(var i = 0; i < 6; i++){
       tempCudeBox.push(
         <div key={i} className={`surface  key${i}`}>
           {this.props.cudeBox[i].content} 
@@ -64,7 +56,7 @@ export default class Home extends Component{
       );
       tempCudeImg.push(
         <div key={i} className={`surface-in  index${i}`}>
-          <img src={_this.cudeImg[i].content} alt="" />
+          <img src={`../../img/${i+2}.jpg`} alt="" />
         </div>
       );
     }

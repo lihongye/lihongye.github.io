@@ -10,9 +10,7 @@
 /build
 /activeHtml
 /src/img
-/public/activeHtml/img
-/public/activeHtml/activePage/images
-/public/activeHtml/email/images
+/public/img
 .project
 package-lock.json
 
