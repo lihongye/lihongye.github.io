@@ -252,11 +252,11 @@ body{background:url(../img/timg.jpg) center center no-repeat fixed;background-si
 	font-size: 14px;
     border-collapse: collapse;
 	width: 100%;
-	text-align: center;
 }
 .reactTable td {
 	padding:5px;
 	border: 1px solid #928f8f;
+	text-align:center;
 }
 .reactTable tr:hover{
 	background: rgba(221, 221, 221, 0.6);
