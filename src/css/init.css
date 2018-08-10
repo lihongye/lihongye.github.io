@@ -1,13 +1,4 @@
 body{background:url(../img/timg.jpg) center center no-repeat fixed;background-size: cover;}
-/*浮动与清除浮动*/
-.r{float: right;}
-.l{float: left;}
-.error {color: #ec2c36;}
-.clear{clear: both;}
-.clearfloat:after,.clearfloat:before{display:table;content:"";}
-.clearfloat:after{clear: both}
-.clearfloat{*zoom:1}
-
 /*页面菜单样式*/
 .menuList {
 	position: fixed;
