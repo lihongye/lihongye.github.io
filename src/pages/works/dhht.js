@@ -104,12 +104,6 @@ export default class Dhht extends Component{
       ]
     }
   }
-  componentWillUnmount(){
-    
-  }
-  componentDidMount(){
-    
-  }
   render(){
     var item = this.state.dhhtList, tempList = [];
     for(var i = 0, len = item.length; i < len; i++){
@@ -149,7 +143,7 @@ export default class Dhht extends Component{
     }
     return(
       <div className="mainContent">
-        <p>公司之前是做跨境电商的, 名字叫丹宏昊天, 后面公司转型做维保业务,  现在叫汤姆国际售后服务有限公司。 </p>
+        <p>公司之前是做跨境电商的, 名字叫丹宏昊天, 后面公司转型做维保业务,  现在叫汤姆国际售后服务有限公司。公司代码管理开始是使用svn,后面开发团队增加出现代码覆盖的问题很多, 最后使用git管理. </p>
         {tempList}
       </div>
     );

@@ -6,14 +6,7 @@ export default class Choice extends Component{
   constructor(props){
     super(props);
     this.state = {
-
     }
-  }
-  componentWillUnmount(){
-    
-  }
-  componentDidMount(){
-    
   }
   renderChoice(){
   	var choice_direct = this.props.match.params.topicId;
