@@ -54,9 +54,10 @@ export default class Home extends Component{
           {this.props.cudeBox[i].content} 
         </div>
       );
+      /*需要用require才可以正常引用图片*/
       tempCudeImg.push(
         <div key={i} className={`surface-in  index${i}`}>
-          <img src={`../../img/${i+2}.jpg`} alt="" />
+          <img src={require(`../img/${i+2}.jpg`)} alt="" />
         </div>
       );
     }

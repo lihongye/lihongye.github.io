@@ -1,7 +1,0 @@
-body{background:url(./img/timg.jpg) center center no-repeat fixed;}
-.headerTop {
-	background-image: url(./img/top-3200.svg), url(./img/timg.jpg);
-}
-#footer {
-	background-image: url(../../img/bottom-1600.svg),url(../../img/timg.jpg);
-}

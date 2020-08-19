@@ -124,10 +124,13 @@ export default class Dhht extends Component{
                         <tbody>                        
                       {
                         el.active ? el.active.map((elSecond, index) => {
+                        	/*
+                      	 *https://jhclwxlhy.github.io/不知道为什么这个连接访问比了了。GitHub homepage页面
+                      	 */
                           return <tr key={index}>
-                              <td><a className="link" href={ `https://jhclwxlhy.github.io/activePage/hdPage.html?name=${elSecond.search}&marker=${elSecond.marker}`} target="__blank">{ `${elSecond.info}活动` }</a></td>
+                              <td><a className="link" href={ `http://lihongye.gitee.io/homepage/activePage/hdPage.html?name=${elSecond.search}&marker=${elSecond.marker}`} target="__blank">{ `${elSecond.info}活动` }</a></td>
                               <td>
-                                { elSecond.email === "0" ? '' : <a className="link" href={ `https://jhclwxlhy.github.io/email/${elSecond.marker}-email.html?name=${elSecond.search}` } target="__blank">{`邮件 (${elSecond.time})` }</a>}
+                                { elSecond.email === "0" ? '' : <a className="link" href={ `http://lihongye.gitee.io/homepage/email/${elSecond.marker}-email.html?name=${elSecond.search}` } target="__blank">{`邮件 (${elSecond.time})` }</a>}
                               </td>
                               <td>{ elSecond.time }</td>
                               </tr>

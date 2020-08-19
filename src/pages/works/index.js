@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, NavLink } from 'react-router-dom';
-import Choice from "./works/choice";
-import Dhht from "./works/dhht";
+import Choice from "./choice";
+import Dhht from "./dhht";
 export default class Works extends Component{
   constructor(props){
     super(props);

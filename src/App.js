@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
 import Home from "./pages/home";
-import Works from "./pages/works";
+import Works from "./pages/works/";
 import NotFoundPage from "./pages/404";
 export default class App extends Component{
   constructor(props){
